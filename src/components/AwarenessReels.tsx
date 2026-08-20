@@ -42,16 +42,36 @@ export default function AwarenessReels() {
   const carouselRef = useRef<HTMLDivElement>(null);
   const videoRefs = useRef<{ [key: string]: HTMLVideoElement | null }>({});
 
-  // 1. Initial silent play for all video cards on mount
+  // 1. Viewport-aware play/pause for video cards (free up GPU/CPU when off-screen)
   useEffect(() => {
-    Object.keys(videoRefs.current).forEach((k) => {
-      const v = videoRefs.current[k];
-      if (v) {
-        v.muted = true;
-        v.play().catch(() => {});
-      }
-    });
-  }, []);
+    const container = carouselRef.current;
+    if (!container) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            Object.keys(videoRefs.current).forEach((k) => {
+              const v = videoRefs.current[k];
+              if (v && (k === activeId || !activeId)) {
+                if (k !== activeId) v.muted = true;
+                v.play().catch(() => {});
+              }
+            });
+          } else {
+            Object.keys(videoRefs.current).forEach((k) => {
+              const v = videoRefs.current[k];
+              if (v) v.pause();
+            });
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    observer.observe(container);
+    return () => observer.disconnect();
+  }, [activeId]);
 
   // 2. Smooth auto-sliding timer when isAutoSliding is true
   useEffect(() => {
@@ -186,7 +206,7 @@ export default function AwarenessReels() {
                       muted
                       playsInline
                       className="reel-video-element"
-                      preload="auto"
+                      preload="metadata"
                     />
 
                     <div className="reel-title-overlay">

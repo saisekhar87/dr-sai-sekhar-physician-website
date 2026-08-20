@@ -120,11 +120,12 @@ export default function FeaturedServicesTabs({ categories, showCatalogLink = tru
                 className="featured-service-card card-interactive"
               >
                 <div className="card-image-wrapper">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={getServiceImage(service.slug, service.name)}
                     alt={service.name}
-                    loading="lazy"
+                    width={400}
+                    height={250}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 360px"
                     className="card-service-img"
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   />

@@ -8,17 +8,11 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.drsaisekharphysician.com"),
   title: {
-    default: "Trinetra Medicals | Dr Sai Sekhar P | Best Physician in Visakhapatnam / Vizag",
-    template: "%s | Trinetra Medicals - Dr. Sai Sekhar P Visakhapatnam"
+    default: "Dr. Sai Sekhar P | Best Physician in Visakhapatnam / Vizag",
+    template: "%s | Dr. Sai Sekhar P Visakhapatnam"
   },
-  description: "Trinetra Medicals is the clinic of Dr. Sai Sekhar Pyla (MD General Medicine, Diabetologist) in Muralinagar, Visakhapatnam. Specialized treatment for Diabetes, Thyroid, Fevers, Hypertension & Internal Medicine.",
+  description: "Dr. Sai Sekhar Pyla (MD General Medicine, Diabetologist) is the best physician in Visakhapatnam / Vizag. Specialized treatment for Diabetes, Thyroid, Fevers, Hypertension & Internal Medicine at Trinetra Medicals, Muralinagar.",
   keywords: [
-    "Trinetra Medicals",
-    "Trinetra Medicals Visakhapatnam",
-    "Trinetra Medicals Vizag",
-    "Trinetra Medicals Muralinagar",
-    "Trinetra Medicals doctor",
-    "Trinetra Medicals contact number",
     "Dr. Sai Sekhar P",
     "Dr. Sai Sekhar Pyla",
     "Best Physician in Visakhapatnam",
@@ -27,6 +21,10 @@ export const metadata: Metadata = {
     "Diabetologist Visakhapatnam",
     "Infectious Disease Specialist Vizag",
     "Internal Medicine Doctor Visakhapatnam",
+    "Trinetra Medicals",
+    "Trinetra Medicals Visakhapatnam",
+    "Trinetra Medicals Vizag",
+    "Trinetra Medicals Muralinagar",
     "Doctor in Muralinagar Visakhapatnam"
   ],
   authors: [{ name: "Dr. Sai Sekhar P" }],
@@ -48,15 +46,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://www.drsaisekharphysician.com/",
-    title: "Trinetra Medicals | Dr Sai Sekhar P | Best Physician in Visakhapatnam / Vizag",
-    description: "Trinetra Medicals is the clinic of Dr. Sai Sekhar Pyla (MD General Medicine, Diabetologist) in Muralinagar, Visakhapatnam. Specialized treatment for Diabetes, Thyroid, Fevers, Hypertension & Internal Medicine.",
-    siteName: "Trinetra Medicals - Dr. Sai Sekhar Pyla Clinic Visakhapatnam",
-    images: [{ url: "https://www.drsaisekharphysician.com/images/two.webp", width: 1200, height: 630, alt: "Trinetra Medicals - Dr. Sai Sekhar P Best Physician in Visakhapatnam" }]
+    title: "Dr. Sai Sekhar P | Best Physician in Visakhapatnam / Vizag",
+    description: "Dr. Sai Sekhar Pyla (MD General Medicine, Diabetologist) is the best physician in Visakhapatnam / Vizag. Specialized treatment for Diabetes, Thyroid, Fevers, Hypertension & Internal Medicine at Trinetra Medicals, Muralinagar.",
+    siteName: "Dr. Sai Sekhar Pyla - General Physician Visakhapatnam",
+    images: [{ url: "https://www.drsaisekharphysician.com/images/two.webp", width: 1200, height: 630, alt: "Dr. Sai Sekhar P - Best Physician in Visakhapatnam" }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Trinetra Medicals | Dr Sai Sekhar P | Best Physician in Visakhapatnam / Vizag",
-    description: "Trinetra Medicals is the clinic of Dr. Sai Sekhar Pyla (MD General Medicine, Diabetologist) in Muralinagar, Visakhapatnam. Specialized treatment for Diabetes, Thyroid, Fevers, Hypertension & Internal Medicine.",
+    title: "Dr. Sai Sekhar P | Best Physician in Visakhapatnam / Vizag",
+    description: "Dr. Sai Sekhar Pyla (MD General Medicine, Diabetologist) is the best physician in Visakhapatnam / Vizag. Specialized treatment for Diabetes, Thyroid, Fevers, Hypertension & Internal Medicine at Trinetra Medicals, Muralinagar.",
     images: ["https://www.drsaisekharphysician.com/images/two.webp"]
   },
   robots: {
@@ -199,8 +197,10 @@ export default function RootLayout({
   ];
 
   return (
-    <html lang="en" data-scroll-behavior="smooth">
+    <html lang="en">
       <head>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
         <link rel="icon" href="/images/logo.png" type="image/png" sizes="any" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />

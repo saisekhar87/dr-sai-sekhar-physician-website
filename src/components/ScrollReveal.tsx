@@ -29,12 +29,13 @@ export default function ScrollReveal() {
           for (const entry of entries) {
             if (entry.isIntersecting) {
               entry.target.classList.add('is-revealed');
+              observer.unobserve(entry.target);
             }
           }
         },
         {
-          threshold: 0,
-          rootMargin: '0px 0px 150px 0px'
+          threshold: 0.05,
+          rootMargin: '0px 0px 100px 0px'
         }
       );
 
@@ -44,7 +45,7 @@ export default function ScrollReveal() {
       });
       
       return () => {
-        elements.forEach((el) => observer.unobserve(el));
+        observer.disconnect();
       };
     }
   }, [pathname]); // Re-run when pathname changes

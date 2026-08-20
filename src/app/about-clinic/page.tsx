@@ -7,7 +7,7 @@ import ClinicGallery from "@/components/ClinicGallery";
 export const revalidate = 3600; // Revalidate every hour
 
 export const metadata: Metadata = {
-  title: { absolute: "About Clinic | Trinetra Medicals Visakhapatnam" },
+  title: { absolute: "About Clinic | Dr. Sai Sekhar P Visakhapatnam" },
   description: "Facility overview, consultation hours, and medical amenities at Trinetra Medicals, Muralinagar — clinic of Dr. Sai Sekhar Pyla.",
 };
 

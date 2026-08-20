@@ -92,21 +92,6 @@
   }
 }
 
-/* Page Navigation View Transitions (Ultra Fast & Snappy) */
-@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
-  @view-transition {
-    navigation: auto;
-  }
-
-  ::view-transition-old(root) {
-    animation: 0.15s ease-out both fade-scale-out;
-  }
-
-  ::view-transition-new(root) {
-    animation: 0.15s ease-in both fade-scale-in;
-  }
-}
-
 @keyframes fade-scale-out {
   to { opacity: 0; }
 }
@@ -223,7 +208,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   height: 100%;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
