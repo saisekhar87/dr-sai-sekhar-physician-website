@@ -7,8 +7,7 @@ export default function ContactForm() {
     fullname: "",
     email: "",
     mobile: "",
-    message: "",
-    rating: 5
+    message: ""
   });
 
   const [status, setStatus] = useState<{
@@ -20,12 +19,8 @@ export default function ContactForm() {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: name === "rating" ? parseInt(value) : value
+      [name]: value
     }));
-  };
-
-  const handleStarClick = (ratingValue: number) => {
-    setFormData((prev) => ({ ...prev, rating: ratingValue }));
   };
 
   const handleSubmit = async (e: React.FormEvent, isWhatsAppDirect: boolean = false) => {
@@ -45,8 +40,7 @@ I would like to book a consultation / inquiry.
 *Patient Details:*
 - Name: ${formData.fullname}
 - Phone: ${formData.mobile}
-${emailLine}- Rating: ${formData.rating}/5 Stars
-
+${emailLine}
 *Query / Symptoms:*
 "${formData.message}"
 
@@ -76,8 +70,7 @@ Sent via website: drsaisekharphysician.com`;
           fullname: "",
           email: "",
           mobile: "",
-          message: "",
-          rating: 5
+          message: ""
         });
       } else {
         setStatus({
@@ -159,23 +152,6 @@ Sent via website: drsaisekharphysician.com`;
               onChange={handleChange}
               className="form-control"
             />
-          </div>
-
-          <div className="form-group">
-            <label>How would you rate your experience? (Optional)</label>
-            <div className="star-rating">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <button
-                  type="button"
-                  key={star}
-                  onClick={() => handleStarClick(star)}
-                  className={`star-btn ${star <= formData.rating ? "active" : ""}`}
-                  aria-label={`Rate ${star} Stars`}
-                >
-                  ★
-                </button>
-              ))}
-            </div>
           </div>
 
           <div className="form-group">
