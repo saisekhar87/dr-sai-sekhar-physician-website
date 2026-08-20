@@ -34,12 +34,13 @@ export default function HomeSlider({ banners }: HomeSliderProps) {
       }))
     : defaultBanners;
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5500);
-    return () => clearInterval(timer);
-  }, [slides.length]);
+  // Disabled auto-slide timer so hero banner stays static on initial visit
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setCurrent((prev) => (prev + 1) % slides.length);
+  //   }, 5500);
+  //   return () => clearInterval(timer);
+  // }, [slides.length]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
