@@ -37,7 +37,7 @@ export default function ContactForm() {
 
     setStatus({ type: "loading", message: "Processing your request..." });
 
-    // Format pre-filled WhatsApp message
+    const emailLine = formData.email ? `- Email: ${formData.email}\n` : "";
     const waMessage = `Hello Dr. Sai Sekhar Pyla Clinic,
 
 I would like to book a consultation / inquiry.
@@ -45,7 +45,7 @@ I would like to book a consultation / inquiry.
 *Patient Details:*
 - Name: ${formData.fullname}
 - Phone: ${formData.mobile}
-${formData.email ? `- Email: ${formData.email}\n` : ''}- Rating: ${formData.rating}/5 Stars
+${emailLine}- Rating: ${formData.rating}/5 Stars
 
 *Query / Symptoms:*
 "${formData.message}"

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { getServiceImage } from "@/lib/servicesImageMap";
@@ -47,6 +47,48 @@ export default function FeaturedServicesTabs({ categories, showCatalogLink = tru
   const [activeCatId, setActiveCatId] = useState<number | string>(categories[0].id);
   const tabTrackRef = useRef<HTMLDivElement>(null);
 
+  // Restore active category selection from sessionStorage or URL query parameters on mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlCat = urlParams.get("cat") || urlParams.get("category");
+      const storedCat = sessionStorage.getItem("active_service_cat");
+      
+      const targetCatId = urlCat || storedCat;
+      if (targetCatId) {
+        const found = categories.find(
+          (c) => String(c.id) === String(targetCatId) || String(c.category_name).toLowerCase() === String(targetCatId).toLowerCase()
+        );
+        if (found) {
+          setActiveCatId(found.id);
+        }
+      }
+    }
+  }, [categories]);
+
+  // Smoothly scroll the active tab pill into view in the horizontal track when active tab changes
+  useEffect(() => {
+    if (tabTrackRef.current) {
+      const activeBtn = tabTrackRef.current.querySelector(".featured-tab-btn.active") as HTMLElement;
+      if (activeBtn) {
+        activeBtn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      }
+    }
+  }, [activeCatId]);
+
+  const handleCategorySelect = (catId: number | string) => {
+    setActiveCatId(catId);
+    if (typeof window !== "undefined") {
+      sessionStorage.setItem("active_service_cat", String(catId));
+    }
+  };
+
+  const handleCardClick = (catId: number | string) => {
+    if (typeof window !== "undefined") {
+      sessionStorage.setItem("active_service_cat", String(catId));
+    }
+  };
+
   const scrollLeft = () => {
     tabTrackRef.current?.scrollBy({ left: -240, behavior: "smooth" });
   };
@@ -79,7 +121,7 @@ export default function FeaturedServicesTabs({ categories, showCatalogLink = tru
               <button
                 key={cat.id}
                 className={`featured-tab-btn ${isActive ? "active" : ""}`}
-                onClick={() => setActiveCatId(cat.id)}
+                onClick={() => handleCategorySelect(cat.id)}
               >
                 <i className={`fas ${iconClass}`}></i>
                 <span>{cat.category_name}</span>
@@ -118,6 +160,7 @@ export default function FeaturedServicesTabs({ categories, showCatalogLink = tru
                 href={`/services/${service.slug}`}
                 prefetch={true}
                 className="featured-service-card card-interactive"
+                onClick={() => handleCardClick(activeCategory.id)}
               >
                 <div className="card-image-wrapper">
                   <Image

@@ -160,7 +160,7 @@ export default function HomeSlider({ banners }: HomeSliderProps) {
                 <div className="image-frame-container">
                   <Image 
                     src="/images/one.webp"
-                    alt="Dr. Sai Sekhar Pila - Consultant Physician"
+                    alt="Dr. Sai Sekhar Pyla - Consultant Physician"
                     width={480}
                     height={500}
                     priority

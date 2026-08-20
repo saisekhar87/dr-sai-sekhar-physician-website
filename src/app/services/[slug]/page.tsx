@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ContactForm from "@/components/ContactForm";
+import MobileStickyCta from "@/components/MobileStickyCta";
 import { getServiceImage } from "@/lib/servicesImageMap";
 import { serviceFallbackMap, cleanServiceContent } from "@/data/serviceDetails";
 
@@ -200,7 +201,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
       </div>
 
-      
+      <MobileStickyCta serviceName={service.name} />
     </div>
   );
 }

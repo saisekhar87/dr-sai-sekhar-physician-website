@@ -1211,48 +1211,93 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "ischemic-heart-disease": {
     name: "Ischemic Heart Disease (CAD)",
     content: `
-      <p>Ischemic Heart Disease, also known as Coronary Artery Disease (CAD), occurs when reduced blood flow to the heart muscle causes chest pain, angina, and increased risk of myocardial infarction.</p>
+      <p><strong>Ischemic Heart Disease (IHD)</strong>, also widely known as <strong>Coronary Artery Disease (CAD)</strong>, is a major cardiovascular condition occurring when narrow or hardened coronary arteries restrict oxygen-rich blood flow to the myocardium (heart muscle). Under the clinical supervision of <strong>Dr. Sai Sekhar Pyla</strong> (<strong>MD General Medicine, Diabetologist</strong>) at <strong>Trinetra Medicals, Muralinagar, Visakhapatnam</strong>, patients receive comprehensive cardiac risk stratification, medical management, and preventative vascular care.</p>
+      
       <h3>Causes & Risk Factors</h3>
       <ul>
-        <li><strong>Atherosclerosis:</strong> Plaque accumulation in coronary arteries.</li>
-        <li><strong>Uncontrolled Hypertension & Diabetes:</strong> Accelerates arterial stiffness and vascular damage.</li>
-        <li><strong>Dyslipidemia & Smoking:</strong> High LDL cholesterol levels and tobacco use severely elevate CAD risks.</li>
+        <li><strong>Coronary Atherosclerosis:</strong> Accumulation of fatty cholesterol plaques causing arterial luminal narrowing.</li>
+        <li><strong>Uncontrolled Diabetes Mellitus:</strong> Chronically elevated blood sugar accelerates vascular inflammation and micro/macrovascular damage.</li>
+        <li><strong>Systemic Hypertension & Dyslipidemia:</strong> High blood pressure strains arterial walls while high LDL cholesterol feeds plaque buildup.</li>
+        <li><strong>Tobacco Use & Physical Inactivity:</strong> Cigarette smoking causes acute endothelial dysfunction and arterial spasm.</li>
+        <li><strong>Family History & Metabolic Syndrome:</strong> Genetic predisposition, abdominal obesity, and high serum triglycerides.</li>
       </ul>
-      <h3>Symptoms</h3>
+
+      <h3>Symptoms & Warning Signs</h3>
       <ul>
-        <li>Angina or pressure-like chest tightness radiating to left arm or jaw.</li>
-        <li>Shortness of breath during mild exertion.</li>
-        <li>Unexplained fatigue and dizziness.</li>
+        <li><strong>Angina Pectoris:</strong> Squeezing, pressure-like, or burning chest tightness radiating to the left arm, neck, jaw, or epigastrium.</li>
+        <li><strong>Exertional Dyspnea:</strong> Shortness of breath triggered by mild physical activity or climbing stairs.</li>
+        <li><strong>Atypical Symptoms in Diabetics:</strong> "Silent ischemia" where diabetic neuropathy masks classical chest pain; patients may only present with unexplained diaphoresis (sweating), profound fatigue, or nausea.</li>
+        <li><strong>Palpitations & Lightheadedness:</strong> Irregular heart rhythm or feeling faint during exertion.</li>
       </ul>
-      <h3>Clinical Management</h3>
+
+      <h3>Diagnostic Evaluation</h3>
       <ul>
-        <li><strong>Diagnostic Screening:</strong> ECG, ECHO, Treadmill Test (TMT), and Cardiac Biomarkers.</li>
-        <li><strong>Medical Therapy:</strong> Antiplatelets, Statins, Beta-blockers, and ACE inhibitors.</li>
-        <li><strong>Lifestyle Modification:</strong> Low-sodium heart-healthy diet, structured cardiac rehabilitation, and weight management.</li>
+        <li><strong>12-Lead Electrocardiogram (ECG):</strong> Identifies ischemic ST-T wave changes, bundle branch blocks, or previous silent infarcts.</li>
+        <li><strong>2D Echocardiogram (ECHO):</strong> Evaluates left ventricular ejection fraction (LVEF), wall motion abnormalities, and valvular integrity.</li>
+        <li><strong>Cardiac Biomarkers:</strong> Serum High-Sensitivity Troponin T/I and CK-MB levels during acute symptom presentation.</li>
+        <li><strong>Stress Testing & Coronary Angiography:</strong> Treadmill Test (TMT) or CT Coronary Angioplasty for precise luminal mapping.</li>
       </ul>
+
+      <h3>Treatment & Clinical Management Protocol</h3>
+      <ul>
+        <li><strong>Antiplatelet & Antithrombotic Therapy:</strong> Low-dose Aspirin and Clopidogrel to prevent intracoronary thrombus formation.</li>
+        <li><strong>Lipid-Lowering Statin Therapy:</strong> High-intensity Statins (Atorvastatin / Rosuvastatin) to stabilize atherosclerotic plaques and maintain target LDL &lt; 70 mg/dL.</li>
+        <li><strong>Hemodynamic Optimization:</strong> Beta-blockers (Atenolol/Metoprolol) and ACE Inhibitors/ARBs to lower myocardial oxygen demand and control hypertension.</li>
+        <li><strong>Nitrate Therapy:</strong> Sublingual Nitroglycerin for acute angina symptom relief.</li>
+      </ul>
+
+      <h3>Complications & Prevention</h3>
+      <p>Untreated CAD can progress to acute myocardial infarction (heart attack), heart failure, and life-threatening arrhythmias. Daily brisk walking, low-sodium Mediterranean diet, smoking cessation, and strict HbA1c/BP control are critical for long-term survival.</p>
     `
   },
 
   "heart-failure": {
     name: "Heart Failure Management",
     content: `
-      <p>Heart Failure is a chronic progressive condition in which the heart muscle is unable to pump sufficient blood to meet the body's metabolic demands.</p>
+      <p><strong>Heart Failure (Congestive Heart Failure - CHF)</strong> is a chronic, progressive cardiovascular condition in which the heart muscle is structurally or functionally unable to pump sufficient blood to satisfy the body's systemic oxygen and metabolic demands. Expert diagnostic evaluation and evidence-based medical therapy are provided by <strong>Dr. Sai Sekhar Pyla</strong> at <strong>Trinetra Medicals, Visakhapatnam</strong>.</p>
+      
+      <h3>Types of Heart Failure</h3>
+      <ul>
+        <li><strong>HFrEF (Heart Failure with Reduced Ejection Fraction):</strong> Systolic failure where LVEF is &le; 40%, meaning the heart pump is weakened.</li>
+        <li><strong>HFpEF (Heart Failure with Preserved Ejection Fraction):</strong> Diastolic failure where LVEF is &ge; 50%, but heart chambers are stiff and unable to relax and fill properly.</li>
+      </ul>
+
       <h3>Causes & Risk Factors</h3>
       <ul>
-        <li>Long-standing hypertension and ischemic heart disease.</li>
-        <li>Valvular heart disorders, cardiomyopathy, and uncontrolled diabetes.</li>
+        <li>Prior Myocardial Infarction (Heart Attack) causing permanent cardiac scar tissue.</li>
+        <li>Long-standing uncontrolled Hypertension (High Blood Pressure).</li>
+        <li>Diabetic Cardiomyopathy and chronic metabolic dysfunction.</li>
+        <li>Valvular heart disease (aortic stenosis, mitral regurgitation) and viral myocarditis.</li>
       </ul>
-      <h3>Symptoms</h3>
+
+      <h3>Symptoms & Clinical Signs</h3>
       <ul>
-        <li>Shortness of breath (dyspnea) when lying flat or during physical activity.</li>
-        <li>Swelling (edema) in legs, feet, ankles, and abdomen.</li>
-        <li>Persistent cough, rapid weight gain from fluid retention, and severe weakness.</li>
+        <li><strong>Dyspnea (Shortness of Breath):</strong> Exertional dyspnea progressing to Orthopnea (inability to breathe while lying flat) and Paroxysmal Nocturnal Dyspnea (waking up gasping for air).</li>
+        <li><strong>Peripheral & Visceral Edema:</strong> Swelling in feet, ankles, shins, and abdomen (ascites) due to fluid retention.</li>
+        <li><strong>Persistent Cough:</strong> Pink, frothy sputum accompanying acute pulmonary congestion.</li>
+        <li><strong>Severe Fatigue & Rapid Weight Gain:</strong> Sudden weight increase of 1–2 kg over 48 hours from fluid buildup.</li>
       </ul>
-      <h3>Treatment Protocol</h3>
+
+      <h3>Diagnostic Evaluation</h3>
       <ul>
-        <li><strong>Pharmacotherapy:</strong> Diuretics, ARNI/ACEi, Beta-blockers, and SGLT2 inhibitors.</li>
-        <li><strong>Fluid & Sodium Restriction:</strong> Daily weight monitoring and salt intake restriction.</li>
-        <li><strong>Routine Monitoring:</strong> Regular echocardiograms and kidney function monitoring.</li>
+        <li><strong>NT-proBNP / BNP Blood Test:</strong> Key cardiac biomarker confirming elevated ventricular stretch and heart failure severity.</li>
+        <li><strong>2D Echocardiogram (ECHO):</strong> Quantifies LVEF, ventricular volumes, diastolic filling pressures, and valve status.</li>
+        <li><strong>Chest X-ray:</strong> Visualizes cardiomegaly (enlarged heart) and pulmonary venous congestion / Kerley B lines.</li>
+        <li><strong>Renal & Electrolyte Panel:</strong> Monitors serum creatinine, BUN, sodium, and potassium levels.</li>
+      </ul>
+
+      <h3>Treatment & Management Protocol</h3>
+      <ul>
+        <li><strong>GDMT (Guideline-Directed Medical Therapy):</strong>
+          <ul>
+            <li><em>ARNI (Sacubitril/Valsartan) or ACEi/ARB:</em> Reduces cardiac strain and mortality.</li>
+            <li><em>Beta-Blockers (Carvedilol, Bisoprolol, Metoprolol Succinate):</em> Blunts sympathetic overactivity.</li>
+            <li><em>MRA (Spironolactone / Eplerenone):</em> Aldosterone receptor antagonist reducing cardiac fibrosis.</li>
+            <li><em>SGLT2 Inhibitors (Dapagliflozin / Empagliflozin):</em> Significantly reduces heart failure hospitalizations.</li>
+          </ul>
+        </li>
+        <li><strong>Diuretic Therapy:</strong> Loop diuretics (Furosemide / Torsemide) to relieve pulmonary congestion and edema.</li>
+        <li><strong>Fluid & Sodium Restriction:</strong> Strict dietary salt limitation (&lt; 2g/day) and daily morning weight tracking.</li>
       </ul>
     `
   },
@@ -1260,23 +1305,38 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "allergies": {
     name: "Allergies & Immunological Care",
     content: `
-      <p>Allergies are hypersensitive immune responses to environmental substances, food, or medications, triggering inflammatory reactions across respiratory, skin, and mucosal tissues.</p>
-      <h3>Common Triggers & Types</h3>
+      <p><strong>Allergies</strong> are hypersensitive immune responses triggered when the body's immune system overreacts to non-harmful environmental substances (allergens) by producing IgE antibodies and releasing histamine from mast cells. Comprehensive diagnostic assessment and relief protocols are offered by <strong>Dr. Sai Sekhar Pyla</strong> in <strong>Muralinagar, Visakhapatnam</strong>.</p>
+      
+      <h3>Types of Allergic Conditions</h3>
       <ul>
-        <li><strong>Allergic Rhinitis:</strong> Pollen, dust mites, mold spores, and animal dander.</li>
-        <li><strong>Food & Drug Allergens:</strong> Peanuts, seafood, antibiotics, or NSAIDs.</li>
-        <li><strong>Skin Allergies:</strong> Urticaria (hives), contact dermatitis, and eczema.</li>
+        <li><strong>Allergic Rhinitis ("Hay Fever"):</strong> Seasonal or perennial inflammation of nasal mucosa triggered by pollen, dust mites, mold, or pet dander.</li>
+        <li><strong>Cutaneous Allergies:</strong> Urticaria (hives), angioedema (facial/lip swelling), contact dermatitis, and atopic eczema.</li>
+        <li><strong>Food & Drug Hypersensitivity:</strong> Acute allergic reactions to peanuts, shellfish, milk, penicillin, or NSAIDs.</li>
+        <li><strong>Allergic Asthma:</strong> Airway bronchospasm and wheezing triggered by inhaled environmental allergens.</li>
       </ul>
+
       <h3>Symptoms</h3>
       <ul>
-        <li>Sneezing, runny nose, nasal congestion, and watery eyes.</li>
-        <li>Itchy skin rashes, hives, coughing, or wheezing.</li>
+        <li>Frequent sneezing, clear watery nasal discharge, and nasal congestion.</li>
+        <li>Itchy red eyes (allergic conjunctivitis), throat irritation, and persistent dry cough.</li>
+        <li>Pruritic raised skin wheals (hives) or painful subcutaneous swelling (angioedema).</li>
+        <li>Gastrointestinal symptoms (nausea, abdominal cramps, diarrhea) in food allergies.</li>
+        <li><strong>Anaphylaxis (Severe Medical Emergency):</strong> Sudden throat tightness, difficulty breathing, dizziness, rapid drop in BP, and collapse.</li>
       </ul>
-      <h3>Treatment Protocol</h3>
+
+      <h3>Diagnostic Evaluation</h3>
       <ul>
-        <li><strong>Antihistamine Therapy:</strong> Second-generation non-drowsy H1 blockers and nasal sprays.</li>
-        <li><strong>Trigger Identification:</strong> Allergy testing and environmental elimination.</li>
-        <li><strong>Emergency Management:</strong> Anaphylaxis prevention counseling and prompt acute care.</li>
+        <li><strong>Serum Total IgE & Specific IgE Tests:</strong> Measures systemic allergic antibody levels.</li>
+        <li><strong>Skin Prick Testing (SPT):</strong> Identifies specific environmental or dietary allergen sensitivity.</li>
+        <li><strong>Complete Blood Count (CBC):</strong> Evaluates peripheral blood eosinophilia.</li>
+      </ul>
+
+      <h3>Treatment & Management Protocol</h3>
+      <ul>
+        <li><strong>Second-Generation Antihistamines:</strong> Non-drowsy oral H1 blockers (Cetirizine, Levocetirizine, Fexofenadine, Bilastine).</li>
+        <li><strong>Intranasal Corticosteroid Sprays:</strong> Fluticasone or Mometasone for persistent allergic rhinitis.</li>
+        <li><strong>Leukotriene Receptor Antagonists:</strong> Montelukast for combined rhinitis and allergic asthma.</li>
+        <li><strong>Allergen Avoidance Counseling:</strong> Dust mite covers, HEPA air filtration, and dietary elimination.</li>
       </ul>
     `
   },
@@ -1284,17 +1344,28 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "substance-abuse": {
     name: "Substance Abuse & Addiction Recovery",
     content: `
-      <p>Substance Abuse management involves medical detox, psychological support, and lifestyle modification to overcome harmful dependencies on alcohol, tobacco, prescription drugs, or chemical substances.</p>
-      <h3>Clinical Symptoms & Risks</h3>
+      <p><strong>Substance Abuse & Addiction Management</strong> involves comprehensive clinical detoxification, organ wellness protection, medical stabilization, and lifestyle restructuring for individuals struggling with harmful dependency on alcohol, nicotine, prescription sedatives, or narcotics. Confidential medical consultation is conducted by <strong>Dr. Sai Sekhar Pyla</strong> at <strong>Trinetra Medicals, Visakhapatnam</strong>.</p>
+      
+      <h3>Substances Commonly Addressed</h3>
       <ul>
-        <li>Physical dependence, tremors, cravings, and withdrawal symptoms.</li>
-        <li>Organ impairment including hepatic dysfunction, gastrointestinal damage, and cardiovascular strain.</li>
+        <li><strong>Alcohol Use Disorder (AUD):</strong> Chronic heavy alcohol intake leading to liver toxicity, gastritis, and dependency.</li>
+        <li><strong>Nicotine & Tobacco Addiction:</strong> Smoking or chewing tobacco causing respiratory, vascular, and oncological damage.</li>
+        <li><strong>Prescription Drug Dependency:</strong> Overuse of benzodiazepines, sleeping pills, or opioid analgesics.</li>
       </ul>
-      <h3>Comprehensive Care Protocol</h3>
+
+      <h3>Symptoms & Health Risks</h3>
       <ul>
-        <li><strong>Medical Detoxification:</strong> Safe supervised tapering and symptom management.</li>
-        <li><strong>Organ Function Screening:</strong> Liver function tests, renal panels, and cardiac evaluation.</li>
-        <li><strong>Relapse Prevention:</strong> Behavioral counseling, lifestyle restructuring, and support therapy.</li>
+        <li>Physical craving, tolerance (requiring higher doses for effect), and loss of control over usage.</li>
+        <li><strong>Withdrawal Symptoms:</strong> Hand tremors, diaphoresis (sweating), tachycardia, severe anxiety, nausea, or delirium tremens (in severe alcohol withdrawal).</li>
+        <li><strong>Systemic Complications:</strong> Fatty liver disease, alcoholic hepatitis, liver cirrhosis, hypertension, cardiomyopathy, and gastrointestinal bleeding.</li>
+      </ul>
+
+      <h3>Clinical Management Protocol</h3>
+      <ul>
+        <li><strong>Supervised Medical Detoxification:</strong> Safe, symptom-targeted tapering using long-acting benzodiazepines, anti-emetics, and neuro-protective medications.</li>
+        <li><strong>Organ Function Screening:</strong> Comprehensive Liver Function Tests (LFT: SGOT, SGPT, Bilirubin, GGT), Complete Blood Count, Renal Panel, and Abdominal Ultrasound.</li>
+        <li><strong>Nutritional & Vitamin Support:</strong> High-dose Parenteral/Oral B-Complex (Thiamine / Vitamin B1) supplementation to prevent Wernicke-Korsakoff encephalopathy.</li>
+        <li><strong>Relapse Prevention & Counseling:</strong> Anti-craving medications (Acamprosate, Naltrexone, Baclofen) combined with behavioral counseling.</li>
       </ul>
     `
   },
@@ -1302,18 +1373,30 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "insomnia": {
     name: "Insomnia & Sleep Disorders",
     content: `
-      <p>Insomnia is a prevalent sleep disorder characterized by persistent difficulty falling asleep, staying asleep, or experiencing non-restorative sleep, leading to daytime impairment.</p>
+      <p><strong>Insomnia</strong> is a common neurological and metabolic sleep disorder characterized by persistent dissatisfaction with sleep quantity or quality, encompassing difficulty initiating sleep, maintaining sleep, or experiencing early morning awakenings with daytime impairment. Dedicated diagnostic and clinical sleep management is provided by <strong>Dr. Sai Sekhar Pyla</strong> in <strong>Visakhapatnam</strong>.</p>
+      
       <h3>Causes & Contributing Factors</h3>
       <ul>
-        <li>High anxiety, chronic stress, or underlying depressive disorders.</li>
-        <li>Poor sleep hygiene, irregular work schedules, and excessive screen time.</li>
-        <li>Chronic medical conditions, pain, or sleep apnea.</li>
+        <li><strong>Psychological Stress & Anxiety:</strong> Elevated evening cortisol levels, racing thoughts, and depressive disorders.</li>
+        <li><strong>Medical Co-morbidities:</strong> Chronic pain, acid reflux (GERD), nocturnal polyuria, asthma, or diabetic neuropathy.</li>
+        <li><strong>Circadian Rhythm Disruptions:</strong> Shift work, jet lag, irregular sleep-wake schedules, and excessive blue light exposure from screens before bed.</li>
+        <li><strong>Substance Interferences:</strong> Late-day caffeine, alcohol nightcaps, nicotine, or stimulant medications.</li>
       </ul>
-      <h3>Treatment & Management</h3>
+
+      <h3>Symptoms & Impact</h3>
       <ul>
-        <li><strong>Cognitive Behavioral Therapy for Insomnia (CBT-I):</strong> First-line non-pharmacological treatment.</li>
-        <li><strong>Sleep Hygiene Protocols:</strong> Structured sleep-wake cycles, dark quiet environment, and stimulus control.</li>
-        <li><strong>Short-Term Pharmacotherapy:</strong> Judicious short-term medical management when indicated.</li>
+        <li>Taking over 30 minutes to fall asleep at night (onset insomnia).</li>
+        <li>Frequent night-time waking with inability to fall back asleep (maintenance insomnia).</li>
+        <li>Daytime fatigue, irritability, difficulty concentrating, memory lapses, and reduced work productivity.</li>
+        <li>Increased risk of hypertension, weight gain, impaired glucose tolerance, and weakened immunity.</li>
+      </ul>
+
+      <h3>Treatment & Management Protocol</h3>
+      <ul>
+        <li><strong>Cognitive Behavioral Therapy for Insomnia (CBT-I):</strong> First-line gold-standard non-pharmacological treatment focusing on stimulus control and sleep restriction.</li>
+        <li><strong>Strict Sleep Hygiene Guidelines:</strong> Maintaining fixed wake-up times, keeping the bedroom dark and cool, and eliminating electronics 1 hour before sleep.</li>
+        <li><strong>Underlying Medical Optimization:</strong> Treating nocturnal pain, GERD, or sleep apnea symptoms.</li>
+        <li><strong>Judicious Short-Term Pharmacotherapy:</strong> Non-benzodiazepine hypnotics or melatonin receptor agonists prescribed strictly under medical supervision.</li>
       </ul>
     `
   },
@@ -1321,41 +1404,91 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "adult-vaccination": {
     name: "Adult Immunization & Vaccines",
     content: `
-      <p>Adult Vaccination is essential for maintaining lifelong immunity against preventable infectious diseases, particularly for elderly individuals and patients with chronic health conditions.</p>
+      <p><strong>Adult Vaccination (Immunization)</strong> is an essential branch of preventative internal medicine designed to protect adults, senior citizens, and patients with chronic illnesses against vaccine-preventable infectious diseases. Preventative adult vaccine consultation and administration are provided by <strong>Dr. Sai Sekhar Pyla</strong> at <strong>Trinetra Medicals, Muralinagar, Visakhapatnam</strong>.</p>
+      
+      <h3>Why Adult Vaccination is Vital</h3>
+      <ul>
+        <li>Childhood immunity wanes over time, requiring adult booster doses (e.g., Tetanus & Diphtheria).</li>
+        <li>Patients with Diabetes, Heart Failure, COPD, or Asthma face significantly higher risks of severe pneumococcal and influenza complications.</li>
+        <li>Protects elderly individuals (aged 60+) against invasive infections and hospitalization.</li>
+      </ul>
+
       <h3>Key Recommended Adult Vaccines</h3>
-      <ul>
-        <li><strong>Influenza Vaccine:</strong> Annual flu shot for respiratory infection prevention.</li>
-        <li><strong>Pneumococcal Vaccine:</strong> Protects against severe pneumonia and invasive pneumococcal disease.</li>
-        <li><strong>Hepatitis B & Tdap:</strong> Immunization against Hepatitis B, Tetanus, Diphtheria, and Pertussis.</li>
-        <li><strong>Shingles (Herpes Zoster) Vaccine:</strong> Prevents painful shingles outbreaks in adults aged 50+.</li>
-      </ul>
-      <h3>Clinical Benefits</h3>
-      <ul>
-        <li>Reduces hospitalization rates in diabetic, cardiac, and senior patients.</li>
-        <li>Provides community immunity and prevents severe complications.</li>
-      </ul>
+      <div style="overflow-x: auto; margin: 16px 0;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+          <thead>
+            <tr style="background-color: var(--primary-light, #f0fdf4); border-bottom: 2px solid var(--primary);">
+              <th style="padding: 10px; border: 1px solid #e2e8f0;">Vaccine</th>
+              <th style="padding: 10px; border: 1px solid #e2e8f0;">Target Disease</th>
+              <th style="padding: 10px; border: 1px solid #e2e8f0;">Recommended Audience & Schedule</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;"><strong>Influenza (Flu) Vaccine</strong></td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">Seasonal Flu & Respiratory Complications</td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">Annual single dose (especially for diabetics, seniors, and healthcare workers).</td>
+            </tr>
+            <tr style="background-color: #f8fafc;">
+              <td style="padding: 10px; border: 1px solid #e2e8f0;"><strong>Pneumococcal (PCV13 / PPSV23)</strong></td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">Pneumonia, Meningitis, & Bacteremia</td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">Adults 50+, or younger adults with Diabetes, Asthma, or CKD.</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;"><strong>Hepatitis B Vaccine</strong></td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">Hepatitis B Liver Infection & Cirrhosis</td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">3-dose series (0, 1, 6 months) for all non-immune adults.</td>
+            </tr>
+            <tr style="background-color: #f8fafc;">
+              <td style="padding: 10px; border: 1px solid #e2e8f0;"><strong>Tdap / Td Booster</strong></td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">Tetanus, Diphtheria, & Pertussis</td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">Single Tdap dose followed by Td booster every 10 years.</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;"><strong>Shingles (Herpes Zoster)</strong></td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">Shingles & Post-Herpetic Neuralgia</td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">2-dose series for adults aged 50 and above.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     `
   },
 
   "connective-tissue-diseases": {
     name: "Connective Tissue Diseases",
     content: `
-      <p>Connective Tissue Diseases encompass autoimmune inflammatory disorders affecting collagen and tissue structures throughout joints, skin, blood vessels, and internal organs.</p>
-      <h3>Key Conditions Covered</h3>
+      <p><strong>Connective Tissue Diseases (CTD)</strong> are a complex group of autoimmune inflammatory conditions targeting collagen, elastin, and structural extracellular matrix tissues across joints, skin, blood vessels, lungs, and internal organs. Expert diagnostic evaluation and long-term care are managed by <strong>Dr. Sai Sekhar Pyla</strong> in <strong>Visakhapatnam</strong>.</p>
+      
+      <h3>Major Connective Tissue Disorders</h3>
       <ul>
-        <li>Systemic Lupus Erythematosus (SLE)</li>
-        <li>Systemic Sclerosis (Scleroderma)</li>
-        <li>Mixed Connective Tissue Disease (MCTD) and Sjögren's Syndrome</li>
+        <li><strong>Systemic Lupus Erythematosus (SLE):</strong> Multisystem autoimmune disease affecting joints, skin, kidneys (lupus nephritis), and blood cells.</li>
+        <li><strong>Systemic Sclerosis (Scleroderma):</strong> Characterized by abnormal collagen accumulation causing skin thickening and vascular sclerosis.</li>
+        <li><strong>Sjögren's Syndrome:</strong> Autoimmune destruction of exocrine lacrimal and salivary glands leading to severe dry eyes and dry mouth.</li>
+        <li><strong>Mixed Connective Tissue Disease (MCTD) & Polymyositis:</strong> Overlapping clinical features of Lupus, Scleroderma, and muscle inflammation.</li>
       </ul>
-      <h3>Symptoms & Evaluation</h3>
+
+      <h3>Symptoms</h3>
       <ul>
-        <li>Joint pain, Raynaud's phenomenon, skin rashes, and chronic fatigue.</li>
-        <li>Autoantibody panels (ANA, anti-dsDNA, ENA), ESR, and CRP biomarkers.</li>
+        <li>Symmetrical joint pain, swelling, and morning stiffness.</li>
+        <li><strong>Raynaud's Phenomenon:</strong> Fingers turning white, blue, then red upon exposure to cold temperatures.</li>
+        <li>Malar "butterfly" facial rash across nose and cheeks (classic in SLE).</li>
+        <li>Unexplained prolonged low-grade fever, extreme fatigue, and hair loss.</li>
+        <li>Shortness of breath or dry cough due to Interstitial Lung Disease (ILD).</li>
       </ul>
-      <h3>Management</h3>
+
+      <h3>Diagnostic Evaluation</h3>
       <ul>
-        <li>Disease-Modifying Antirheumatic Drugs (DMARDs) and targeted immunosuppressive regimens.</li>
-        <li>Multisystem organ screening and protective lifestyle counseling.</li>
+        <li><strong>Antinuclear Antibody (ANA) Test:</strong> Primary sensitive screening test for connective tissue disorders.</li>
+        <li><strong>Specific Autoantibody Panels:</strong> Anti-dsDNA, Anti-Smith, Anti-Ro/SSA, Anti-La/SSB, Anti-Scl-70, and Anti-U1 RNP.</li>
+        <li><strong>Inflammatory Markers & Complement Levels:</strong> ESR, C-Reactive Protein (CRP), C3, and C4 complement levels.</li>
+      </ul>
+
+      <h3>Treatment & Clinical Management</h3>
+      <ul>
+        <li><strong>DMARDs (Disease-Modifying Antirheumatic Drugs):</strong> Hydroxychloroquine (HCQ), Methotrexate, or Azathioprine to suppress disease activity.</li>
+        <li><strong>Corticosteroid Flare Management:</strong> Judicious low-dose oral steroids for acute inflammatory suppression.</li>
+        <li><strong>Organ Protection Screening:</strong> Regular urinalysis for proteinuria, renal function panels, and pulmonary function tests.</li>
       </ul>
     `
   },
@@ -1363,12 +1496,21 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "cancer-surgery": {
     name: "Cancer Surgery Pre & Post Care",
     content: `
-      <p>Comprehensive perioperative medical management, pre-surgical fitness optimization, and post-surgical recovery care for oncology patients undergoing tumor resection.</p>
-      <h3>Care Protocols</h3>
+      <p><strong>Cancer Surgery Pre & Post-Operative Care</strong> encompasses specialized internal medicine consultation, perioperative risk clearance, nutritional optimization, and post-surgical recovery monitoring for oncology patients undergoing surgical tumor resection. Physician management is provided by <strong>Dr. Sai Sekhar Pyla</strong> at <strong>Trinetra Medicals, Visakhapatnam</strong>.</p>
+      
+      <h3>Pre-Operative Medical Clearance</h3>
       <ul>
-        <li><strong>Pre-Operative Clearance:</strong> Cardiopulmonary evaluation, nutritional optimization, and metabolic stabilization.</li>
-        <li><strong>Post-Operative Recovery:</strong> Wound monitoring, pain management, infection control, and venous thromboembolism (VTE) prophylaxis.</li>
-        <li><strong>Oncology Support:</strong> Multidisciplinary coordination with surgical and medical oncologists.</li>
+        <li><strong>Cardiopulmonary Risk Assessment:</strong> Evaluating cardiac ejection fraction (ECHO), ECG, and lung function (PFT/Spirometry) prior to anesthesia.</li>
+        <li><strong>Metabolic & Glycemic Optimization:</strong> Achieving stable blood sugar levels in diabetic patients to prevent wound breakdown and surgical site infections.</li>
+        <li><strong>Correction of Anemia & Coagulopathies:</strong> Pre-surgical blood transfusions, iron therapy, and antiplatelet/anticoagulant bridging management.</li>
+      </ul>
+
+      <h3>Post-Operative Clinical Recovery</h3>
+      <ul>
+        <li><strong>Wound Healing & Infection Control:</strong> Monitoring surgical incisions for infection and managing postoperative fever.</li>
+        <li><strong>Thromboembolism Prophylaxis:</strong> Low-Molecular-Weight Heparin (LMWH) and compression therapy to prevent Deep Vein Thrombosis (DVT) and Pulmonary Embolism.</li>
+        <li><strong>Post-Surgical Pain & Electrolyte Management:</strong> Balancing intravenous fluids, serum potassium, sodium, and pain relief therapy.</li>
+        <li><strong>Nutritional Rehabilitation:</strong> Early enteral nutrition and dietary protein enrichment to aid rapid tissue repair.</li>
       </ul>
     `
   },
@@ -1376,12 +1518,24 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "routine-health-checkups": {
     name: "Routine Executive Health Checkups",
     content: `
-      <p>Comprehensive preventative health screenings designed to detect early asymptomatic medical conditions including hypertension, pre-diabetes, dyslipidemia, and organ dysfunction.</p>
-      <h3>Screening Package Includes</h3>
+      <p><strong>Routine Executive Health Checkups & Preventative Screenings</strong> are structured diagnostic evaluations designed to identify asymptomatic early-stage metabolic, cardiac, renal, and endocrine disorders before clinical symptoms emerge. Comprehensive physician checkups are conducted by <strong>Dr. Sai Sekhar Pyla</strong> (<strong>MD General Medicine</strong>) at <strong>Trinetra Medicals, Muralinagar, Visakhapatnam</strong>.</p>
+      
+      <h3>Why Preventative Health Checkups are Essential</h3>
       <ul>
-        <li><strong>Comprehensive Lab Panel:</strong> Complete Blood Count (CBC), Fasting Blood Glucose, HbA1c, Lipid Profile, Liver & Kidney function tests.</li>
-        <li><strong>Diagnostic Imaging & Screening:</strong> ECG, Chest X-ray, and Abdominal Ultrasound if indicated.</li>
-        <li><strong>Physician Consultation:</strong> Detailed clinical assessment, risk stratifying, and personalized preventative care roadmap.</li>
+        <li>Early detection of silent conditions such as Prediabetes, High Blood Pressure, Fatty Liver, and High Cholesterol.</li>
+        <li>Establishes baseline health markers to track yearly physiological changes.</li>
+        <li>Provides personalized lifestyle, dietary, and exercise recommendations tailored to your age and family history.</li>
+      </ul>
+
+      <h3>Comprehensive Checkup Package Includes</h3>
+      <ul>
+        <li><strong>Diabetes & Metabolic Panel:</strong> Fasting Blood Glucose, Postprandial Blood Sugar, and HbA1c (Glycated Hemoglobin).</li>
+        <li><strong>Lipid & Cardiac Risk Profile:</strong> Total Cholesterol, Triglycerides, HDL, LDL, VLDL, and 12-Lead ECG.</li>
+        <li><strong>Kidney Function Test (KFT):</strong> Serum Creatinine, Blood Urea Nitrogen (BUN), Serum Uric Acid, and Urinalysis.</li>
+        <li><strong>Liver Function Test (LFT):</strong> SGOT, SGPT, Alkaline Phosphatase, Bilirubin, and Total Protein.</li>
+        <li><strong>Complete Hemogram (CBC):</strong> Hemoglobin, RBC count, White Blood Cell Differential, and Platelet Count.</li>
+        <li><strong>Thyroid Screening:</strong> TSH (Thyroid Stimulating Hormone) test.</li>
+        <li><strong>Detailed Physician Consultation:</strong> Physical examination, blood pressure check, BMI calculation, and individualized treatment roadmap by Dr. Sai Sekhar Pyla.</li>
       </ul>
     `
   },
@@ -1389,17 +1543,29 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "vitamin-deficiency": {
     name: "Vitamin & Mineral Deficiency Management",
     content: `
-      <p>Clinical evaluation and therapeutic supplementation for essential micronutrient deficiencies affecting bone health, nerve function, immunity, and energy levels.</p>
-      <h3>Common Deficiencies Treated</h3>
+      <p><strong>Vitamin & Mineral Deficiencies</strong> occur when the body lacks essential micronutrients required for enzyme function, bone mineral density, neurological conduction, and hematopoiesis. Accurate lab diagnosis and therapeutic supplementation are provided by <strong>Dr. Sai Sekhar Pyla</strong> in <strong>Visakhapatnam</strong>.</p>
+      
+      <h3>Common Deficiencies & Clinical Symptoms</h3>
       <ul>
-        <li><strong>Vitamin D3 Deficiency:</strong> Causes bone pain, muscle weakness, osteopenia, and fatigue.</li>
-        <li><strong>Vitamin B12 Deficiency:</strong> Leads to megaloblastic anemia, peripheral neuropathy, memory loss, and tingling sensations.</li>
-        <li><strong>Iron & Calcium Deficiencies:</strong> Causes fatigue, anemia, brittle nails, and diminished bone density.</li>
+        <li><strong>Vitamin D3 Deficiency:</strong> Causes generalized bone pain, muscle weakness, frequent infections, osteopenia, and increased fracture risk. Extremely common due to indoor sedentary lifestyles.</li>
+        <li><strong>Vitamin B12 Deficiency:</strong> Leads to Megaloblastic Anemia, peripheral nerve damage (numbness, tingling in feet/hands), memory impairment, glossitis (swollen smooth tongue), and chronic fatigue.</li>
+        <li><strong>Iron Deficiency Anemia:</strong> Results in pale skin, extreme exhaustion, shortness of breath, brittle nails (koilonychia), and cold hands/feet.</li>
+        <li><strong>Calcium & Magnesium Deficiencies:</strong> Causes muscle cramps, spasms, bone loss (osteoporosis), and cardiac irritability.</li>
       </ul>
-      <h3>Treatment Protocol</h3>
+
+      <h3>Diagnostic Evaluation</h3>
       <ul>
-        <li>Serum biomarker testing (25-OH Vitamin D, B12, Serum Ferritin).</li>
-        <li>Therapeutic oral or parenteral supplementation and dietary modification plans.</li>
+        <li><strong>Serum 25-Hydroxy Vitamin D Test:</strong> Defines deficient (&lt; 20 ng/mL), insufficient (20–29 ng/mL), or optimal (&gt; 30 ng/mL) levels.</li>
+        <li><strong>Serum Vitamin B12 & Folate Level:</strong> Evaluates cobalamin status.</li>
+        <li><strong>Complete Blood Count & Ferritin Panel:</strong> Measures Serum Ferritin, Total Iron Binding Capacity (TIBC), and Transferrin Saturation.</li>
+      </ul>
+
+      <h3>Treatment & Management Protocol</h3>
+      <ul>
+        <li><strong>Therapeutic Vitamin D3 Replacement:</strong> High-dose Cholecalciferol (60,000 IU weekly) for 8 weeks followed by monthly maintenance.</li>
+        <li><strong>B12 Replacement Therapy:</strong> Intramuscular Methylcobalamin injections or high-dose oral sublingual tablets.</li>
+        <li><strong>Oral Iron Therapy:</strong> Ferrous ascorbate / elemental iron supplements combined with Vitamin C for optimal intestinal absorption.</li>
+        <li><strong>Dietary Enrichment:</strong> Nutritional guidance on leafy greens, dairy, nuts, seeds, and fortified foods.</li>
       </ul>
     `
   },
@@ -1407,12 +1573,15 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "diet-lifestyle-modifications": {
     name: "Diet & Lifestyle Modifications",
     content: `
-      <p>Evidence-based nutritional counseling, medical weight management, and therapeutic lifestyle changes tailored to manage metabolic diseases, diabetes, hypertension, and fatty liver.</p>
+      <p><strong>Therapeutic Diet & Lifestyle Modifications</strong> form the cornerstone of primary prevention and non-pharmacological management for chronic metabolic disorders including Diabetes Mellitus, Hypertension, Dyslipidemia, Obesity, and Non-Alcoholic Fatty Liver Disease (NAFLD). Medical guidance is customized by <strong>Dr. Sai Sekhar Pyla</strong> at <strong>Trinetra Medicals, Visakhapatnam</strong>.</p>
+      
       <h3>Key Clinical Focus Areas</h3>
       <ul>
-        <li><strong>Glycemic Control Diet:</strong> Low glycemic index meal plans for optimal HbA1c regulation.</li>
-        <li><strong>DASH & Heart-Healthy Diet:</strong> Low-sodium, high-potassium nutrition for blood pressure optimization.</li>
-        <li><strong>Weight & Exercise Management:</strong> Safe aerobic and resistance exercise schedules for metabolic health.</li>
+        <li><strong>Glycemic Index Meal Planning for Diabetics:</strong> Transitioning to complex carbohydrates, high-fiber legumes, and whole grains to eliminate postprandial glucose spikes.</li>
+        <li><strong>DASH Diet for Hypertensive Patients:</strong> Sodium restriction (&lt; 2,000 mg/day), increased potassium-rich foods, and elimination of processed foods.</li>
+        <li><strong>Therapeutic Weight Loss Protocols:</strong> Achieving 5–10% body weight reduction to reverse insulin resistance and lower liver enzymes.</li>
+        <li><strong>Cardiovascular Exercise Schedule:</strong> Tailored recommendation of 150 minutes per week of moderate-intensity aerobic exercise (brisk walking, cycling) and progressive resistance training.</li>
+        <li><strong>Sleep Architecture & Stress Reduction:</strong> Regulating sleep cycles and reducing stress-induced cortisol release.</li>
       </ul>
     `
   },
@@ -1420,16 +1589,50 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "dyslipidemia": {
     name: "Dyslipidemia & Lipid Management",
     content: `
-      <p>Dyslipidemia is an abnormal elevation of serum cholesterol, triglycerides, or low-density lipoproteins (LDL) that significantly increases arterial plaque formation and stroke risk.</p>
-      <h3>Clinical Diagnostic Targets</h3>
+      <p><strong>Dyslipidemia</strong> is a major metabolic condition characterized by abnormal concentrations of serum lipids, including elevated Low-Density Lipoprotein Cholesterol (LDL-C), high Triglycerides, or low High-Density Lipoprotein Cholesterol (HDL-C). It is a primary driver of coronary plaque accumulation and ischemic stroke. Lipid evaluation and therapy are managed by <strong>Dr. Sai Sekhar Pyla</strong> in <strong>Muralinagar, Visakhapatnam</strong>.</p>
+      
+      <h3>Causes & Risk Factors</h3>
       <ul>
-        <li>Fasting Lipid Panel: Total Cholesterol, LDL-C, HDL-C, Triglycerides, and Non-HDL Cholesterol.</li>
-        <li>Atherosclerotic Cardiovascular Disease (ASCVD) Risk Assessment.</li>
+        <li><strong>Dietary Factors:</strong> High intake of saturated fats, trans-fats, fried foods, and refined sugars.</li>
+        <li><strong>Metabolic & Genetic Conditions:</strong> Familial Hypercholesterolemia, Type 2 Diabetes, Hypothyroidism, and Chronic Kidney Disease.</li>
+        <li><strong>Sedentary Lifestyle & Obesity:</strong> Lack of exercise lowers protective HDL cholesterol.</li>
       </ul>
-      <h3>Management Strategy</h3>
+
+      <h3>Diagnostic Target Thresholds</h3>
+      <div style="overflow-x: auto; margin: 16px 0;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+          <thead>
+            <tr style="background-color: var(--primary-light, #f0fdf4); border-bottom: 2px solid var(--primary);">
+              <th style="padding: 10px; border: 1px solid #e2e8f0;">Lipid Parameter</th>
+              <th style="padding: 10px; border: 1px solid #e2e8f0;">Optimal Target Level</th>
+              <th style="padding: 10px; border: 1px solid #e2e8f0;">High / Borderline Risk</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;"><strong>LDL Cholesterol ("Bad")</strong></td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">&lt; 100 mg/dL (&lt; 70 mg/dL in high risk)</td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">&ge; 160–189 mg/dL</td>
+            </tr>
+            <tr style="background-color: #f8fafc;">
+              <td style="padding: 10px; border: 1px solid #e2e8f0;"><strong>Serum Triglycerides</strong></td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">&lt; 150 mg/dL</td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">200–499 mg/dL</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;"><strong>HDL Cholesterol ("Good")</strong></td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">&gt; 40 mg/dL (Men) / &gt; 50 mg/dL (Women)</td>
+              <td style="padding: 10px; border: 1px solid #e2e8f0;">&lt; 40 mg/dL</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Treatment Strategy</h3>
       <ul>
-        <li><strong>Statin & Lipid-Lowering Therapy:</strong> High-intensity or moderate-intensity statins tailored to patient risk.</li>
-        <li><strong>Dietary Interventions:</strong> Reduction of saturated fats, elimination of trans-fats, and increase in soluble fiber.</li>
+        <li><strong>Statin Pharmacotherapy:</strong> HMG-CoA reductase inhibitors (Atorvastatin / Rosuvastatin) to reduce LDL-C synthesis and stabilize vascular endothelial lining.</li>
+        <li><strong>Ezetimibe / Fibrate Add-on:</strong> Indicated for severe hypertriglyceridemia (&gt; 500 mg/dL) to prevent acute pancreatitis.</li>
+        <li><strong>Nutritional & Lifestyle Interventions:</strong> Elimination of trans-fats, increased soluble dietary fiber, and weight management.</li>
       </ul>
     `
   },
@@ -1437,18 +1640,31 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "septic-syndrome": {
     name: "Septic Syndrome & Severe Infection Care",
     content: `
-      <p>Septic Syndrome (Sepsis) is a life-threatening organ dysfunction caused by a dysregulated host response to severe bacterial, viral, or fungal infections.</p>
-      <h3>Early Warning Signs</h3>
+      <p><strong>Septic Syndrome (Sepsis)</strong> is a life-threatening medical emergency caused by a dysregulated, toxic host immune response to a severe bacterial, viral, or fungal infection, leading to acute tissue inflammation, microvascular thrombosis, and organ failure. ICU and critical care physician management is directed by <strong>Dr. Sai Sekhar Pyla</strong> (<strong>MD General Medicine</strong>) in <strong>Visakhapatnam</strong>.</p>
+      
+      <h3>Common Infection Sources</h3>
       <ul>
-        <li>High fever or hypothermia with severe chills/shivering.</li>
-        <li>Rapid heart rate (tachycardia), rapid breathing (tachypnea), and altered mental state.</li>
-        <li>Low blood pressure (hypotension) and reduced urine output.</li>
+        <li>Severe Pneumonia and lower respiratory tract infections.</li>
+        <li>Complicated Urinary Tract Infections (Pyelonephritis / Urosepsis).</li>
+        <li>Abdominal infections (peritonitis, acute cholangitis, severe gastroenteritis).</li>
+        <li>Skin, soft tissue, and bloodstream infections (bacteremia).</li>
       </ul>
-      <h3>Emergency Protocol</h3>
+
+      <h3>Early Warning Signs (qSOFA Criteria)</h3>
       <ul>
-        <li>Immediate broad-spectrum intravenous antimicrobial therapy.</li>
-        <li>Hemodynamic stabilization with IV fluids and vasopressors if required.</li>
-        <li>Source control and intensive hemodynamic monitoring.</li>
+        <li>High fever spiking &gt; 101°F (38.3°C) or Hypothermia (&lt; 96.8°F / 36°C) with severe rigors.</li>
+        <li>Tachycardia (heart rate &gt; 90 beats/min) and Tachypnea (respiratory rate &gt; 22 breaths/min).</li>
+        <li>Hypotension (Systolic BP &lt; 100 mmHg).</li>
+        <li>Altered mental status, confusion, lethargy, or extreme prostration.</li>
+        <li>Oliguria (significantly decreased urine output).</li>
+      </ul>
+
+      <h3>Clinical Emergency Protocol</h3>
+      <ul>
+        <li><strong>Rapid Resuscitation:</strong> Immediate administration of IV isotonic crystalloid fluids.</li>
+        <li><strong>Empiric Broad-Spectrum Antibiotics:</strong> Administered within the first hour of clinical suspicion after blood culture collection.</li>
+        <li><strong>Lactate Monitoring & Lab Panels:</strong> Serial blood lactate levels, CBC, renal/liver function, and coagulation parameters (PT/INR).</li>
+        <li><strong>Inotropic & Vasopressor Support:</strong> Norepinephrine infusion for persistent septic shock.</li>
       </ul>
     `
   },
@@ -1456,12 +1672,197 @@ export const serviceFallbackMap: Record<string, ServiceDetail> = {
   "geriatric-care": {
     name: "Geriatric Medicine & Elderly Care",
     content: `
-      <p>Specialized comprehensive healthcare tailored for senior citizens, addressing multiple co-morbidities, polypharmacy management, cognitive wellness, and mobility maintenance.</p>
+      <p><strong>Geriatric Medicine</strong> is a specialized branch of internal medicine focused on promoting health, managing complex multi-system co-morbidities, and preventing disability in senior citizens (adults aged 60 and above). Compassionate, comprehensive elderly care is provided by <strong>Dr. Sai Sekhar Pyla</strong> at <strong>Trinetra Medicals, Muralinagar, Visakhapatnam</strong>.</p>
+      
       <h3>Core Geriatric Focus Areas</h3>
       <ul>
-        <li><strong>Polypharmacy Optimization:</strong> Medication review to eliminate drug interactions and unnecessary prescriptions.</li>
-        <li><strong>Chronic Disease Co-Management:</strong> Coordinated care for hypertension, diabetes, arthritis, and heart disease.</li>
-        <li><strong>Fall Prevention & Frailty:</strong> Bone density optimization, joint stabilization, and mobility support.</li>
+        <li><strong>Polypharmacy Optimization:</strong> Systematic review of all ongoing medications to eliminate unnecessary drugs, prevent adverse drug-drug interactions, and adjust dosages for renal clearance.</li>
+        <li><strong>Chronic Multi-Morbidities Management:</strong> Coordinated management for concurrent Diabetes, Hypertension, Heart Failure, Osteoarthritis, and Chronic Kidney Disease.</li>
+        <li><strong>Fall Prevention & Bone Density:</strong> Osteoporosis evaluation (DEXA scan), Vitamin D/Calcium optimization, joint stabilization, and mobility support.</li>
+        <li><strong>Cognitive & Memory Wellness:</strong> Early screening for vascular dementia, Alzheimer's disease, and depression.</li>
+        <li><strong>Preventative Senior Vaccination:</strong> Administering annual Flu shots, Pneumococcal vaccines, and Shingles protection.</li>
+      </ul>
+    `
+  },
+
+  "kidney-stones": {
+    name: "Kidney Stones (Nephrolithiasis)",
+    content: `
+      <p><strong>Kidney Stones (Nephrolithiasis)</strong> are hard mineral and salt deposits that form inside the kidneys. They develop when urine becomes concentrated, allowing minerals to crystallize and stick together.</p>
+      <h3>Causes & Risk Factors</h3>
+      <ul>
+        <li><strong>Dehydration:</strong> Inadequate daily water intake leads to highly concentrated urine.</li>
+        <li><strong>Dietary Factors:</strong> High sodium, animal protein, and oxalate-rich foods (spinach, nuts, chocolate).</li>
+        <li><strong>Metabolic Factors:</strong> Hypercalciuria, hyperuricemia (gout), and hyperparathyroidism.</li>
+        <li><strong>Family History & Obesity:</strong> Genetic predisposition and high BMI elevate stone formation risk.</li>
+      </ul>
+      <h3>Symptoms</h3>
+      <ul>
+        <li>Severe, sharp pain in the side and back, below the ribs (flank pain).</li>
+        <li>Pain radiating to the lower abdomen and groin (renal colic).</li>
+        <li>Painful or burning sensation during urination (dysuria).</li>
+        <li>Pink, red, or brown urine (hematuria).</li>
+        <li>Nausea, vomiting, and persistent urge to urinate.</li>
+      </ul>
+      <h3>Diagnostic Workup</h3>
+      <ul>
+        <li><strong>Non-Contrast CT Scan (KUB):</strong> Gold standard for stone size, location, and density.</li>
+        <li><strong>Renal Ultrasound:</strong> Safe imaging for obstruction and hydronephrosis evaluation.</li>
+        <li><strong>Urinalysis & Blood Panel:</strong> Checks for infection, blood, uric acid, and calcium levels.</li>
+      </ul>
+      <h3>Treatment & Management</h3>
+      <ul>
+        <li><strong>Hydration Therapy:</strong> Drinking 2.5–3 liters of water daily to facilitate natural passage.</li>
+        <li><strong>Medical Expulsive Therapy (MET):</strong> Alpha-blockers (e.g., Tamsulosin) to relax ureteral muscles.</li>
+        <li><strong>Pain Relief:</strong> Doctor-prescribed analgesics for acute renal colic management.</li>
+        <li><strong>Dietary Prevention:</strong> Reduced sodium intake, controlled oxalate consumption, and adequate dietary calcium.</li>
+      </ul>
+    `
+  },
+
+  "hypertension-htn": {
+    name: "Hypertension (High Blood Pressure)",
+    content: `
+      <p><strong>Hypertension (High Blood Pressure)</strong> is a chronic condition in which the long-term force of blood against arterial walls is elevated enough to eventually cause health problems, such as cardiovascular disease and stroke.</p>
+      <h3>Blood Pressure Classification Thresholds</h3>
+      <ul>
+        <li><strong>Normal BP:</strong> Systolic &lt; 120 mmHg and Diastolic &lt; 80 mmHg.</li>
+        <li><strong>Elevated BP:</strong> Systolic 120–129 mmHg and Diastolic &lt; 80 mmHg.</li>
+        <li><strong>Stage 1 Hypertension:</strong> Systolic 130–139 mmHg or Diastolic 80–89 mmHg.</li>
+        <li><strong>Stage 2 Hypertension:</strong> Systolic &ge; 140 mmHg or Diastolic &ge; 90 mmHg.</li>
+        <li><strong>Hypertensive Crisis:</strong> Systolic &gt; 180 mmHg and/or Diastolic &gt; 120 mmHg (Requires immediate emergency care).</li>
+      </ul>
+      <h3>Causes & Risk Factors</h3>
+      <ul>
+        <li><strong>Primary (Essential) Hypertension:</strong> Gradual development with age, genetic factors, high sodium intake, physical inactivity, obesity, and chronic stress.</li>
+        <li><strong>Secondary Hypertension:</strong> Underlying conditions such as renal artery stenosis, chronic kidney disease, obstructive sleep apnea, or thyroid disorders.</li>
+      </ul>
+      <h3>Symptoms</h3>
+      <p>Hypertension is often called the <em>"silent killer"</em> because it rarely produces early symptoms. Severe cases may present with:</p>
+      <ul>
+        <li>Morning occipital headaches and dizziness.</li>
+        <li>Shortness of breath, chest tightness, or palpitations.</li>
+        <li>Visual disturbances or epistaxis (nosebleeds).</li>
+      </ul>
+      <h3>Treatment Protocol</h3>
+      <ul>
+        <li><strong>Lifestyle Modifications (DASH Diet):</strong> Dietary Approaches to Stop Hypertension—low sodium (&lt; 2g/day), rich in fruits, vegetables, and potassium.</li>
+        <li><strong>Antihypertensive Pharmacotherapy:</strong> ACE Inhibitors / ARBs, Calcium Channel Blockers (CCBs), and Thiazide Diuretics tailored to patient profile.</li>
+        <li><strong>Target Blood Pressure:</strong> &lt; 130/80 mmHg for high-risk and diabetic patients.</li>
+      </ul>
+    `
+  },
+
+  "osteoarthritis": {
+    name: "Osteoarthritis (Degenerative Joint Disease)",
+    content: `
+      <p><strong>Osteoarthritis</strong> is the most common form of arthritis, characterized by progressive breakdown of protective articular cartilage cushioning the ends of bones, most frequently affecting knees, hips, hands, and spine.</p>
+      <h3>Causes & Risk Factors</h3>
+      <ul>
+        <li><strong>Aging & Joint Wear-and-Tear:</strong> Cumulative cartilage degeneration over time.</li>
+        <li><strong>Obesity:</strong> Excess weight increases mechanical stress on weight-bearing joints (knees & hips).</li>
+        <li><strong>Prior Joint Injury:</strong> Previous ligament tears, fractures, or repetitive occupational joint stress.</li>
+        <li><strong>Genetics & Bone Deformities:</strong> Inherited cartilage defects or joint malalignment.</li>
+      </ul>
+      <h3>Symptoms</h3>
+      <ul>
+        <li>Joint pain during or after movement.</li>
+        <li>Joint stiffness noticeable upon awakening or after inactivity (lasting &lt; 30 minutes).</li>
+        <li>Tenderness, loss of flexibility, and grating sensation (crepitus).</li>
+        <li>Bony enlargements (Heberden's and Bouchard's nodes in finger joints).</li>
+      </ul>
+      <h3>Clinical Management</h3>
+      <ul>
+        <li><strong>Non-Pharmacological Therapy:</strong> Quadriceps strengthening exercises, low-impact swimming/walking, and weight loss.</li>
+        <li><strong>Pharmacotherapy:</strong> Topical NSAIDs, oral analgesics, and chondroprotective supplements under physician direction.</li>
+        <li><strong>Joint Preservation:</strong> Intra-articular hyaluronic acid or corticosteroid injections for acute flare-ups.</li>
+      </ul>
+    `
+  },
+
+  "asthma": {
+    name: "Asthma Care & Respiratory Management",
+    content: `
+      <p><strong>Asthma</strong> is a chronic inflammatory disorder of the airways causing hyperresponsiveness, bronchospasm, mucosal swelling, and excess mucus production leading to variable airflow obstruction.</p>
+      <h3>Common Triggers</h3>
+      <ul>
+        <li>Environmental allergens: Dust mites, pollen, mold, animal dander.</li>
+        <li>Respiratory viral infections, cold air, and air pollution.</li>
+        <li>Physical exercise, intense emotions, and chemical fumes.</li>
+      </ul>
+      <h3>Symptoms</h3>
+      <ul>
+        <li>Expiratory wheezing (whistling sound during breathing).</li>
+        <li>Shortness of breath (dyspnea) and chest tightness.</li>
+        <li>Persistent coughing, especially at night or early morning.</li>
+      </ul>
+      <h3>Diagnostic Evaluation</h3>
+      <ul>
+        <li><strong>Spirometry / Pulmonary Function Test (PFT):</strong> Demonstrates reversible airway obstruction post-bronchodilator.</li>
+        <li><strong>Peak Expiratory Flow Rate (PEFR):</strong> Daily home monitoring of airflow capacity.</li>
+      </ul>
+      <h3>Treatment Strategy</h3>
+      <ul>
+        <li><strong>Controller Therapy:</strong> Daily Inhaled Corticosteroids (ICS) to suppress chronic airway inflammation.</li>
+        <li><strong>Reliever Therapy:</strong> Short-Acting Beta Agonists (SABA) for rapid relief during acute attacks.</li>
+        <li><strong>Asthma Action Plan:</strong> Trigger avoidance, technique check for inhalers, and allergen control.</li>
+      </ul>
+    `
+  },
+
+  "pneumonia": {
+    name: "Pneumonia & Lower Respiratory Infection Care",
+    content: `
+      <p><strong>Pneumonia</strong> is an acute infection of the lung parenchyma causing inflammation in the air sacs (alveoli), which may fill with fluid or purulent exudate, compromising oxygen exchange.</p>
+      <h3>Causes</h3>
+      <ul>
+        <li><strong>Bacterial:</strong> <em>Streptococcus pneumoniae</em> (most common), <em>Klebsiella pneumoniae, Haemophilus influenzae</em>.</li>
+        <li><strong>Viral:</strong> Influenza virus, Respiratory Syncytial Virus (RSV), SARS-CoV-2.</li>
+        <li><strong>Aspiration:</strong> Inhalation of food, liquid, or vomit into airways.</li>
+      </ul>
+      <h3>Symptoms</h3>
+      <ul>
+        <li>High fever with shaking chills and sweating.</li>
+        <li>Productive cough with yellow, green, or rust-colored sputum.</li>
+        <li>Pleuritic chest pain (sharp pain worsening with deep breaths or coughing).</li>
+        <li>Shortness of breath, rapid shallow breathing, and low oxygen saturation.</li>
+        <li>Confusion or altered mental state (especially in elderly patients).</li>
+      </ul>
+      <h3>Diagnosis & Treatment</h3>
+      <ul>
+        <li><strong>Chest X-ray:</strong> Visualizes lung infiltrates and consolidation.</li>
+        <li><strong>Sputum & Blood Cultures:</strong> Identifies specific pathogen and antibiotic sensitivity.</li>
+        <li><strong>Targeted Antibiotics:</strong> Empiric and culture-guided antibiotic therapy.</li>
+        <li><strong>Supportive Care:</strong> Oxygen therapy, hydration, antipyretics, and chest physiotherapy.</li>
+      </ul>
+    `
+  },
+
+  "copd-chronic-obstructive-pulmonary-disease": {
+    name: "COPD (Chronic Obstructive Pulmonary Disease)",
+    content: `
+      <p><strong>Chronic Obstructive Pulmonary Disease (COPD)</strong> is a progressive, irreversible lung disease characterized by long-term airflow limitation. It encompasses <em>Chronic Bronchitis</em> (long-term airway inflammation) and <em>Emphysema</em> (destruction of lung alveoli).</p>
+      <h3>Causes & Risk Factors</h3>
+      <ul>
+        <li><strong>Tobacco Smoking:</strong> Primary cause of COPD worldwide.</li>
+        <li><strong>Biomass Fuel & Air Pollution:</strong> Indoor exposure to wood/crop burning smoke in unventilated kitchens.</li>
+        <li><strong>Occupational Dusts & Chemicals:</strong> Long-term exposure to industrial dust, silica, or chemical fumes.</li>
+        <li><strong>Alpha-1 Antitrypsin Deficiency:</strong> Genetic disorder leading to early-onset emphysema.</li>
+      </ul>
+      <h3>Symptoms</h3>
+      <ul>
+        <li>Progressive exertional dyspnea (shortness of breath during daily activities).</li>
+        <li>Chronic productive cough with daily sputum production.</li>
+        <li>Frequent respiratory tract infections and wheezing.</li>
+        <li>Fatigue, weight loss, and barrel chest deformity in advanced stages.</li>
+      </ul>
+      <h3>Diagnosis & Management Protocol</h3>
+      <ul>
+        <li><strong>Spirometry:</strong> Confirms persistent airflow limitation (post-bronchodilator FEV1/FVC &lt; 0.70).</li>
+        <li><strong>Inhaled Bronchodilators:</strong> Long-Acting Muscarinic Antagonists (LAMA) and Long-Acting Beta Agonists (LABA).</li>
+        <li><strong>Smoking Cessation:</strong> Single most effective intervention to stop disease progression.</li>
+        <li><strong>Pulmonary Rehabilitation:</strong> Exercise training, breathing techniques, and nutritional guidance.</li>
+        <li><strong>Preventative Vaccination:</strong> Annual Influenza and Pneumococcal vaccination to prevent severe exacerbations.</li>
       </ul>
     `
   }

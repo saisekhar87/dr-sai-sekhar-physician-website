@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import NextLink from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import ClinicStatusBadge from "@/components/ClinicStatusBadge";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -99,11 +100,17 @@ export default function Navbar() {
           </div>
         </NextLink>
 
+        {/* Live Clinic Consultation Status Indicator */}
+        <div className="nav-status-wrapper">
+          <ClinicStatusBadge compact={true} />
+        </div>
+
         {/* Mobile menu toggle */}
         <button
           className={`menu-toggle ${isOpen ? "open" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Navigation Menu"
+          aria-expanded={isOpen}
         >
           <span></span>
           <span></span>

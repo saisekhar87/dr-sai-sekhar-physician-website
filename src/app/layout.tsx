@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 import ScrollReveal from "@/components/ScrollReveal";
+import FloatingActions from "@/components/FloatingActions";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.drsaisekharphysician.com"),
@@ -220,6 +221,7 @@ export default function RootLayout({
         <Navbar />
         <main id="main-content">{children}</main>
         <Footer />
+        <FloatingActions />
         <ScrollReveal />
       </body>
     </html>

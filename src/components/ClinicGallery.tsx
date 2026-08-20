@@ -208,7 +208,7 @@ export default function ClinicGallery() {
                 /* eslint-disable-next-line @next/next/no-img-element */
                 <img
                   src={activeItem.src}
-                  alt="Clinic Gallery Item"
+                  alt={activeItem.title}
                   className="lightbox-img"
                 />
               ) : (

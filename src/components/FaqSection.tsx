@@ -42,8 +42,25 @@ export default function FaqSection() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <section className="faq-section bg-gradient-mesh scroll-reveal">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="container max-w-4xl" style={{ maxWidth: "900px", margin: "0 auto" }}>
         <div className="section-header text-center" style={{ textAlign: "center", marginBottom: "40px" }}>
           <span className="badge">Frequently Asked Questions</span>
@@ -84,6 +101,7 @@ export default function FaqSection() {
                     gap: "16px",
                   }}
                   aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${index}`}
                 >
                   <h3
                     style={{
@@ -107,6 +125,7 @@ export default function FaqSection() {
 
                 {isOpen && (
                   <div
+                    id={`faq-answer-${index}`}
                     className="faq-answer faq-answer-anim"
                     style={{
                       padding: "0 24px 20px 24px",

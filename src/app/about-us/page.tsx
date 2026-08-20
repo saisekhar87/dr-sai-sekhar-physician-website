@@ -54,9 +54,10 @@ export default async function AboutUsPage() {
                 src="/images/three.webp"
                 alt="Dr. Sai Sekhar Clinic Care"
                 width={550}
-                height={420}
+                height={500}
                 className="about-side-img"
                 sizes="(max-width: 991px) 100vw, 550px"
+                style={{ width: "100%", height: "500px", objectFit: "cover", objectPosition: "top center" }}
                 priority
               />
             </div>
