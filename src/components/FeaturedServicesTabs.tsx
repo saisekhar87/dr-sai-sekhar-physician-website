@@ -66,12 +66,18 @@ export default function FeaturedServicesTabs({ categories, showCatalogLink = tru
     }
   }, [categories]);
 
-  // Smoothly scroll the active tab pill into view in the horizontal track when active tab changes
+  // Smoothly scroll the tab track container horizontally without triggering window auto-scrolling
   useEffect(() => {
     if (tabTrackRef.current) {
       const activeBtn = tabTrackRef.current.querySelector(".featured-tab-btn.active") as HTMLElement;
       if (activeBtn) {
-        activeBtn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+        const track = tabTrackRef.current;
+        const btnLeft = activeBtn.offsetLeft;
+        const btnWidth = activeBtn.offsetWidth;
+        const trackWidth = track.clientWidth;
+        
+        const targetScrollLeft = btnLeft - trackWidth / 2 + btnWidth / 2;
+        track.scrollTo({ left: targetScrollLeft, behavior: "smooth" });
       }
     }
   }, [activeCatId]);
