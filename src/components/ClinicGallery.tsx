@@ -51,27 +51,34 @@ export default function ClinicGallery() {
     },
     {
       id: 5,
+      type: "image",
+      src: "/images/certificate.png",
+      title: "Certificate Course in Obesity Prevention & Management (CCOPM)",
+      category: "Medical Qualifications"
+    },
+    {
+      id: 6,
       type: "video",
       src: "/videos/laboverview.mp4",
       title: "Laboratory & Diagnostic Facilities Overview",
       category: "Diagnostic Lab Video"
     },
     {
-      id: 6,
+      id: 7,
       type: "image",
       src: "/images/one.webp",
       title: "Consultation Suite & Patient Examination",
       category: "Examination Room"
     },
     {
-      id: 7,
+      id: 8,
       type: "image",
       src: "/images/three.webp",
       title: "Diagnostic Equipment & Testing",
       category: "Diagnostic Testing"
     },
     {
-      id: 8,
+      id: 9,
       type: "image",
       src: "/images/four.webp",
       title: "Pharmacy & Medical Dispensing",

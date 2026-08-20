@@ -9,25 +9,30 @@ interface FaqItem {
 
 const faqs: FaqItem[] = [
   {
-    question: "What conditions does a General Physician treat?",
+    question: "What medical conditions does Dr. Sai Sekhar P (MD General Medicine) treat?",
     answer:
-      "Direct Answer: A General Physician diagnoses and treats a full range of adult medical conditions including Type 1 & Type 2 Diabetes, Hypertension, Dengue and viral fevers, Thyroid disorders, Asthma/COPD, and Gastrointestinal illnesses. Dr. Sai Sekhar Pyla provides expert primary and preventive care at Trinetra Medicals, Visakhapatnam.",
+      "Dr. Sai Sekhar P provides comprehensive diagnosis and evidence-based care for a wide range of adult health conditions, including Type 1 & Type 2 Diabetes, High Blood Pressure (Hypertension), Thyroid disorders, Fever & Viral infections (Dengue, Typhoid), Respiratory issues (Asthma/COPD), Digestive complaints, and preventive internal medicine."
   },
   {
-    question: "When should you see a Diabetologist in Vizag?",
+    question: "When should I consult Dr. Sai Sekhar P?",
     answer:
-      "Direct Answer: You should consult a diabetologist immediately if your fasting blood sugar exceeds 126 mg/dL, HbA1c is above 6.5%, or if you experience frequent urination, extreme thirst, or foot numbness. As per ICMR guidelines, early diabetes management by Dr. Sai Sekhar Pyla prevents kidney damage and neuropathy.",
+      "You should consult Dr. Sai Sekhar P if you experience persistent symptoms, recurring health issues, unexplained fatigue or weakness, chronic condition management (such as Diabetes or High Blood Pressure), fever or infections, or whenever you require a comprehensive health evaluation."
   },
   {
-    question: "How is Dr. Sai Sekhar different from other physicians in Visakhapatnam?",
+    question: "Can I consult Dr. Sai Sekhar P for Diabetes, High Blood Pressure, and Cholesterol?",
     answer:
-      "Direct Answer: Dr. Sai Sekhar Pyla brings 12+ years of dual expertise in critical care medicine and diabetology. He focuses on root-cause clinical diagnosis, evidence-based guidelines, and patient-centered lifestyle counseling at Trinetra Medicals, Muralinagar.",
+      "Yes. Dr. Sai Sekhar P specializes in Diabetology and Chronic Disease Management. Type 1 & Type 2 Diabetes, Hypertension, Dyslipidemia (high cholesterol), and metabolic conditions are thoroughly evaluated and managed with individualized medical therapy, continuous monitoring, and structured lifestyle guidance."
   },
   {
-    question: "What should I expect during my first consultation?",
+    question: "Can I visit the clinic for acute fever, cough, cold, or viral infections?",
     answer:
-      "Direct Answer: During your first visit at Trinetra Medicals, expect a comprehensive 30-minute medical evaluation, detailed symptom analysis, blood sugar or vitals check, and a personalized treatment and diet plan tailored to your health goals.",
+      "Yes. Common acute symptoms such as high fever, persistent cough, cold, body aches, weakness, Dengue, Malaria, or suspected infections are promptly evaluated at Trinetra Medicals to determine exact causes and provide targeted medical treatment."
   },
+  {
+    question: "Do I need to bring my previous medical reports and prescriptions for consultation?",
+    answer:
+      "Yes, if available. Bringing past prescriptions, blood test results, scan reports, and a list of ongoing medications helps Dr. Sai Sekhar P evaluate your complete medical history and design the most effective treatment plan."
+  }
 ];
 
 export default function FaqSection() {
