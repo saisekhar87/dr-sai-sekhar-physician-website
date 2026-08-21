@@ -35,13 +35,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/icon.png", type: "image/png" },
+      { url: "/images/logo-circle.png", type: "image/png" },
       { url: "/favicon.ico", type: "image/x-icon" }
     ],
     apple: [
       { url: "/images/logo-circle.png", type: "image/png" }
     ],
-    shortcut: ["/icon.png"]
+    shortcut: ["/images/logo-circle.png"]
   },
   openGraph: {
     type: "website",
@@ -203,8 +203,9 @@ export default function RootLayout({
         <link rel="canonical" href="https://www.drsaisekharphysician.com/" />
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
-        <link rel="icon" href="/images/logo.png" type="image/png" sizes="any" />
-        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="icon" href="/images/logo-circle.png" type="image/png" sizes="any" />
+        <link rel="shortcut icon" href="/images/logo-circle.png" />
+        <link rel="apple-touch-icon" href="/images/logo-circle.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <script
           type="application/ld+json"
