@@ -20,10 +20,10 @@ export default function HomeSlider({ banners }: HomeSliderProps) {
   const touchEndX = useRef<number | null>(null);
 
   const defaultBanners = [
-    { id: 1, title: "Comprehensive Diabetes & Chronic Disease Care", subtitle: "Expert diagnosis and advanced, patient-centered therapy for endocrine and metabolic disorders." },
-    { id: 2, title: "Dedicated Chronic Disease Management", subtitle: "Personalized care plans for long-term health, lifestyle conditions, and preventative medicine." },
-    { id: 3, title: "Thyroid & Lifestyle Disorders Treatment", subtitle: "Tailored treatment plans for metabolic, joint, and chronic ailments by Dr. Sai Sekhar P." },
-    { id: 4, title: "Critical Care & Internal Medicine", subtitle: "Renowned medical expertise with a patient-first approach at Trinetra Medicals." }
+    { id: 1, title: "Comprehensive Diabetes &\nChronic Disease Care", subtitle: "Expert diagnosis and advanced, patient-centered therapy for endocrine and metabolic disorders." },
+    { id: 2, title: "Dedicated Chronic\nDisease Management", subtitle: "Personalized care plans for long-term health, lifestyle conditions, and preventative medicine." },
+    { id: 3, title: "Thyroid & Lifestyle\nDisorders Treatment", subtitle: "Tailored treatment plans for metabolic, joint, and chronic ailments by Dr. Sai Sekhar P." },
+    { id: 4, title: "Critical Care &\nInternal Medicine", subtitle: "Renowned medical expertise with a patient-first approach at Trinetra Medicals." }
   ];
 
   const slides = banners && banners.length > 0
@@ -87,9 +87,9 @@ export default function HomeSlider({ banners }: HomeSliderProps) {
               
               {/* Text Container - Only Title & Subtitle Animate */}
               <div className="hero-text-slider-box">
-                <h2 key={`title-${current}`} className="slide-title animate-text-fade">
+                <p key={`title-${current}`} className="slide-title animate-text-fade" style={{ whiteSpace: "pre-line" }}>
                   {currentSlide.title}
-                </h2>
+                </p>
                 <p key={`sub-${current}`} className="slide-subtitle animate-text-fade">
                   {currentSlide.subtitle}
                 </p>

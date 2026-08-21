@@ -87,7 +87,7 @@ export default async function HomePage() {
                 "telephone": "+916300793688",
                 "address": {
                   "@type": "PostalAddress",
-                  "streetAddress": "Beside Abhiruchi Sweets, Ramalayam Street, Muralinagar",
+                  "streetAddress": "Ramalayam Street, Opposite Government School, Muralinagar",
                   "addressLocality": "Visakhapatnam",
                   "addressRegion": "Andhra Pradesh",
                   "postalCode": "530007",
@@ -111,7 +111,7 @@ export default async function HomePage() {
                     "name": "Where is Dr. Sai Sekhar P's clinic located in Visakhapatnam?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Dr. Sai Sekhar P practices at Trinetra Medicals, located Beside Abhiruchi Sweets, Ramalayam Street, Muralinagar, Visakhapatnam (6:00 PM to 9:00 PM, Monday to Saturday)."
+                      "text": "Dr. Sai Sekhar P practices at Trinetra Medicals, located on Ramalayam Street, Opposite Government School, Muralinagar, Visakhapatnam (6:00 PM to 9:00 PM, Monday to Saturday)."
                     }
                   },
                   {
@@ -165,47 +165,18 @@ export default async function HomePage() {
               Consultant Physician at CARE Hospital & <strong>Trinetra Medicals, Muralinagar, Visakhapatnam</strong>
             </p>
 
-            {/* Executive Medical Summary & Key Takeaways Card (AEO & GEO Optimization) */}
-            <div className="top-key-takeaway-card" style={{ backgroundColor: "#f0fdf4", border: "1px solid rgba(13, 122, 102, 0.25)", padding: "20px 24px", borderRadius: "16px", marginBottom: "24px", boxShadow: "0 4px 16px rgba(0,0,0,0.03)" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
-                <span className="badge-pill" style={{ backgroundColor: "var(--primary)", color: "#ffffff", padding: "4px 12px", borderRadius: "20px", fontSize: "0.78rem", fontWeight: 700 }}>
-                  EXECUTIVE MEDICAL SUMMARY
-                </span>
-                <span style={{ fontSize: "0.98rem", fontWeight: 800, color: "var(--neutral-dark)" }}>
-                  Key Care Takeaways & Doctor Overview
-                </span>
-              </div>
-
-              <p style={{ margin: "0 0 12px 0", fontSize: "0.98rem", color: "var(--neutral-dark)", lineHeight: 1.6 }}>
-                <strong>Best Physician in Visakhapatnam / Vizag</strong> - <strong>Dr. Sai Sekhar Pyla</strong> (MD General Medicine) brings <strong>12+ years of expertise</strong> specializing in <strong>Type 1 & Type 2 Diabetes management</strong>, <strong>Dengue & viral fevers</strong>, <strong>Hypertension</strong>, and <strong>preventive internal medicine</strong>. Serving patients in <strong>Muralinagar, NAD Junction, Madhavadhara, Gajuwaka, and Visakhapatnam</strong>.
+            
+            {/* Executive AEO & GEO Key Takeaway Summary Card */}
+            <div className="aeo-top-summary-card" style={{ backgroundColor: "#f0fdf4", borderLeft: "4px solid var(--primary)", border: "1px solid rgba(13, 122, 102, 0.2)", padding: "18px 22px", borderRadius: "12px", marginBottom: "20px" }}>
+              <p style={{ margin: "0 0 8px 0", fontSize: "0.96rem", color: "var(--neutral-dark)", lineHeight: 1.55 }}>
+                <strong>Executive Clinical Summary:</strong> <strong>Dr. Sai Sekhar Pyla</strong> (MD General Medicine) is a top-rated physician and Diabetologist in Visakhapatnam with <strong>12+ years of clinical experience</strong>. He provides evidence-based care for <strong>Type 1 & Type 2 Diabetes</strong>, <strong>Dengue & viral fevers</strong>, <strong>Thyroid imbalance</strong>, and <strong>Hypertension</strong> at <strong>Trinetra Medicals, Muralinagar, Visakhapatnam</strong> (6 PM – 9 PM, Mon–Sat).
               </p>
-
-              {/* Structured Table/Grid for AI Extraction (AEO & GEO) */}
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: "12px", marginTop: "12px", paddingTop: "12px", borderTop: "1px solid rgba(13, 122, 102, 0.15)" }}>
-                <div>
-                  <strong style={{ color: "var(--primary)", display: "block", fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.5px" }}>Lead Physician</strong>
-                  <span style={{ fontSize: "0.92rem", fontWeight: 700, color: "var(--neutral-dark)" }}>Dr. Sai Sekhar Pyla (MD)</span>
-                </div>
-                <div>
-                  <strong style={{ color: "var(--primary)", display: "block", fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.5px" }}>Specialization</strong>
-                  <div style={{ fontSize: "0.92rem", fontWeight: 700, color: "var(--neutral-dark)", lineHeight: 1.35 }}>
-                    MD GENERAL MEDICINE
-                    <div style={{ fontSize: "0.84rem", fontWeight: 600, color: "var(--neutral-dark)", marginTop: "2px" }}>
-                      Diabetology & Infectious Diseases
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <strong style={{ color: "var(--primary)", display: "block", fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.5px" }}>Primary Clinic</strong>
-                  <span style={{ fontSize: "0.92rem", fontWeight: 700, color: "var(--neutral-dark)" }}>Trinetra Medicals, Muralinagar</span>
-                </div>
-                <div>
-                  <strong style={{ color: "var(--primary)", display: "block", fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.5px" }}>Evening Timings</strong>
-                  <span style={{ fontSize: "0.92rem", fontWeight: 700, color: "var(--neutral-dark)" }}>6:00 PM - 9:00 PM (Mon-Sat)</span>
-                </div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", fontSize: "0.86rem", color: "var(--neutral-dark)", paddingTop: "8px", borderTop: "1px solid rgba(13, 122, 102, 0.15)" }}>
+                <span><strong>Target Patients:</strong> Visakhapatnam, Muralinagar, NAD Junction, Madhavadhara, & Gajuwaka</span>
+                <span><strong>First-Hand Proof:</strong> 200,000+ patients treated & 100,000+ chronic care cases managed</span>
               </div>
             </div>
-            
+
             <p className="doctor-bio-paragraph">
               If you are wondering <strong>when should I see a physician</strong>, or if you are experiencing persistent fatigue, unexplained weight changes, or managing a chronic condition like diabetes or thyroid disorders, <strong>Dr. Sai Sekhar Pyla&apos;s</strong> General Medicine practice provides comprehensive care. According to research published by the <a href="https://www.icmr.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary)", textDecoration: "underline" }}>Indian Council of Medical Research (ICMR)</a>, over 101 million Indians live with diabetes - making early diagnosis and evidence-based diabetology essential for preventing long-term complications.
             </p>
@@ -267,83 +238,58 @@ export default async function HomePage() {
             </p>
           </div>
 
-          <div className="guidance-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "28px", marginBottom: "40px" }}>
+          <div className="guidance-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", marginBottom: "32px" }}>
             {/* Question 1 & Answer */}
-            <div className="guidance-card" style={{ backgroundColor: "#fafafa", border: "1px solid var(--neutral-border)", padding: "28px", borderRadius: "16px", boxShadow: "var(--shadow-sm)" }}>
-              <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "var(--primary)", marginBottom: "12px", display: "flex", alignItems: "center", gap: "10px" }}>
-                <i className="fas fa-user-md" style={{ fontSize: "1.1rem" }}></i>
+            <div className="guidance-card" style={{ backgroundColor: "#fafafa", border: "1px solid var(--neutral-border)", padding: "24px", borderRadius: "16px", boxShadow: "var(--shadow-sm)" }}>
+              <h3 style={{ fontSize: "1.15rem", fontWeight: 700, color: "var(--primary)", marginBottom: "10px", display: "flex", alignItems: "center", gap: "10px" }}>
+                <i className="fas fa-user-md" style={{ fontSize: "1.05rem" }}></i>
                 What is a General Physician and Diabetologist?
               </h3>
-              <p style={{ fontSize: "0.98rem", color: "var(--neutral-dark)", lineHeight: 1.6, margin: 0 }}>
-                <strong>Direct Answer:</strong> A General Physician is a medical specialist who diagnoses, manages, and non-surgically treats acute illnesses, fevers, and chronic multi-system diseases. A Diabetologist specializes specifically in managing blood sugar imbalances, insulin therapy, and preventing long-term diabetic complications in Type 1 and Type 2 diabetes.
+              <p style={{ fontSize: "0.95rem", color: "var(--neutral-dark)", lineHeight: 1.55, margin: 0 }}>
+                <strong>Direct Answer:</strong> A General Physician manages fevers, acute illnesses, and multi-organ conditions non-surgically. A Diabetologist specializes in Type 1 & Type 2 Diabetes, insulin therapy, and preventing blood sugar complications.
               </p>
             </div>
 
             {/* Question 2 & Answer */}
-            <div className="guidance-card" style={{ backgroundColor: "#fafafa", border: "1px solid var(--neutral-border)", padding: "28px", borderRadius: "16px", boxShadow: "var(--shadow-sm)" }}>
-              <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "var(--primary)", marginBottom: "12px", display: "flex", alignItems: "center", gap: "10px" }}>
-                <i className="fas fa-clock" style={{ fontSize: "1.1rem" }}></i>
+            <div className="guidance-card" style={{ backgroundColor: "#fafafa", border: "1px solid var(--neutral-border)", padding: "24px", borderRadius: "16px", boxShadow: "var(--shadow-sm)" }}>
+              <h3 style={{ fontSize: "1.15rem", fontWeight: 700, color: "var(--primary)", marginBottom: "10px", display: "flex", alignItems: "center", gap: "10px" }}>
+                <i className="fas fa-clock" style={{ fontSize: "1.05rem" }}></i>
                 When Should You Consult Dr. Sai Sekhar P in Visakhapatnam?
               </h3>
-              <p style={{ fontSize: "0.98rem", color: "var(--neutral-dark)", lineHeight: 1.6, margin: 0 }}>
-                <strong>Direct Answer:</strong> Patients in Visakhapatnam, Muralinagar, NAD Junction, and Madhavadhara should schedule a consultation when experiencing high fasting/post-meal blood sugars, persistent viral fevers (Dengue, Typhoid, Malaria), blood pressure fluctuations, thyroid fatigue, or unexplained weight changes.
+              <p style={{ fontSize: "0.95rem", color: "var(--neutral-dark)", lineHeight: 1.55, margin: 0 }}>
+                <strong>Direct Answer:</strong> Consult for elevated blood sugar, persistent viral fevers (Dengue, Malaria), blood pressure spikes, thyroid fatigue, or chronic symptom evaluation.
               </p>
             </div>
 
             {/* Question 3 & Answer */}
-            <div className="guidance-card" style={{ backgroundColor: "#fafafa", border: "1px solid var(--neutral-border)", padding: "28px", borderRadius: "16px", boxShadow: "var(--shadow-sm)" }}>
-              <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "var(--primary)", marginBottom: "12px", display: "flex", alignItems: "center", gap: "10px" }}>
-                <i className="fas fa-shield-alt" style={{ fontSize: "1.1rem" }}></i>
+            <div className="guidance-card" style={{ backgroundColor: "#fafafa", border: "1px solid var(--neutral-border)", padding: "24px", borderRadius: "16px", boxShadow: "var(--shadow-sm)" }}>
+              <h3 style={{ fontSize: "1.15rem", fontWeight: 700, color: "var(--primary)", marginBottom: "10px", display: "flex", alignItems: "center", gap: "10px" }}>
+                <i className="fas fa-shield-alt" style={{ fontSize: "1.05rem" }}></i>
                 What Clinical Proof & Experience Backs Dr. Sai Sekhar P?
               </h3>
-              <p style={{ fontSize: "0.98rem", color: "var(--neutral-dark)", lineHeight: 1.6, margin: 0 }}>
-                <strong>Direct Answer:</strong> Dr. Sai Sekhar P (MD General Medicine) brings <strong>12+ years of clinical excellence</strong>, having successfully managed over <strong>200,000+ patient consultations</strong>, 100,000+ chronic disease cases, and served as Consultant Physician at CARE Hospital and Trinetra Medicals.
+              <p style={{ fontSize: "0.95rem", color: "var(--neutral-dark)", lineHeight: 1.55, margin: 0 }}>
+                <strong>Direct Answer:</strong> Dr. Sai Sekhar P (MD) brings <strong>12+ years of clinical excellence</strong>, <strong>200,000+ patient consultations</strong>, and 100,000+ chronic care cases at CARE Hospital & Trinetra Medicals.
               </p>
             </div>
+
+
           </div>
 
-          {/* Structured Medical Care Comparison Table (AEO & GEO Decision Support) */}
-          <div className="table-responsive-wrapper" style={{ backgroundColor: "#ffffff", border: "1px solid var(--neutral-border)", borderRadius: "16px", padding: "24px", boxShadow: "var(--shadow-md)", overflowX: "auto" }}>
-            <h3 style={{ fontSize: "1.35rem", fontWeight: 800, color: "var(--neutral-dark)", marginBottom: "16px" }}>
-              Clinical Care Summary & Condition Treatment Matrix
+          {/* Structured Clinical Protocol & Decision Support Checklist (AEO & GEO Extraction) */}
+          <div className="structured-protocol-card" style={{ backgroundColor: "#fafafa", border: "1px solid var(--neutral-border)", borderRadius: "16px", padding: "24px", boxShadow: "var(--shadow-sm)" }}>
+            <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "var(--neutral-dark)", marginBottom: "12px", display: "flex", alignItems: "center", gap: "10px" }}>
+              <i className="fas fa-list-check" style={{ color: "var(--primary)" }}></i>
+              Structured Clinical Care Protocol & Key Services
             </h3>
-            <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left", fontSize: "0.95rem" }}>
-              <thead>
-                <tr style={{ backgroundColor: "var(--bg-mint)", borderBottom: "2px solid var(--primary)" }}>
-                  <th style={{ padding: "12px 16px", color: "var(--primary-dark)", fontWeight: 700 }}>Medical Specialization</th>
-                  <th style={{ padding: "12px 16px", color: "var(--primary-dark)", fontWeight: 700 }}>Common Conditions Treated</th>
-                  <th style={{ padding: "12px 16px", color: "var(--primary-dark)", fontWeight: 700 }}>Diagnostic & Clinical Approach</th>
-                  <th style={{ padding: "12px 16px", color: "var(--primary-dark)", fontWeight: 700 }}>Primary Clinic Hours</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ borderBottom: "1px solid var(--neutral-border)" }}>
-                  <td style={{ padding: "14px 16px", fontWeight: 700, color: "var(--primary)" }}>Diabetology</td>
-                  <td style={{ padding: "14px 16px" }}>Type 1 DM, Type 2 DM, Diabetic Neuropathy, Nephropathy</td>
-                  <td style={{ padding: "14px 16px" }}>HbA1c monitoring, organ protection, personalized insulin & diet plans</td>
-                  <td style={{ padding: "14px 16px", fontWeight: 600 }}>6 PM - 9 PM (Mon-Sat)</td>
-                </tr>
-                <tr style={{ borderBottom: "1px solid var(--neutral-border)", backgroundColor: "#f9fafb" }}>
-                  <td style={{ padding: "14px 16px", fontWeight: 700, color: "var(--primary)" }}>Infectious Fevers</td>
-                  <td style={{ padding: "14px 16px" }}>Dengue Fever, Malaria, Typhoid, Acute Respiratory Fevers, UTI</td>
-                  <td style={{ padding: "14px 16px" }}>Rapid lab evaluation, platelet monitoring, targeted antimicrobial therapy</td>
-                  <td style={{ padding: "14px 16px", fontWeight: 600 }}>6 PM - 9 PM (Mon-Sat)</td>
-                </tr>
-                <tr style={{ borderBottom: "1px solid var(--neutral-border)" }}>
-                  <td style={{ padding: "14px 16px", fontWeight: 700, color: "var(--primary)" }}>Endocrinology & Thyroid</td>
-                  <td style={{ padding: "14px 16px" }}>Hypothyroidism, Hyperthyroidism, Thyroiditis, Metabolic sluggishness</td>
-                  <td style={{ padding: "14px 16px" }}>T3/T4/TSH titration, hormone balancing, metabolic symptom control</td>
-                  <td style={{ padding: "14px 16px", fontWeight: 600 }}>6 PM - 9 PM (Mon-Sat)</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: "14px 16px", fontWeight: 700, color: "var(--primary)" }}>Internal Medicine</td>
-                  <td style={{ padding: "14px 16px" }}>Hypertension (HTN), Acute Gastritis, Migraine, Joint & Renal Care</td>
-                  <td style={{ padding: "14px 16px" }}>Comprehensive organ evaluation, blood pressure control, preventive screening</td>
-                  <td style={{ padding: "14px 16px", fontWeight: 600 }}>6 PM - 9 PM (Mon-Sat)</td>
-                </tr>
-              </tbody>
-            </table>
+            <ul style={{ margin: 0, paddingLeft: "20px", color: "var(--neutral-dark)", lineHeight: 1.7, fontSize: "0.95rem" }}>
+              <li><strong>Diabetes & Metabolic Protocol:</strong> HbA1c testing, organ protection, personalized insulin titration, and diabetic neuropathy monitoring.</li>
+              <li><strong>Infectious Fever Evaluation:</strong> Rapid lab diagnostic checks, platelet count monitoring, and targeted antimicrobial therapy for Dengue, Malaria, & Typhoid.</li>
+              <li><strong>Endocrinology & Thyroid Care:</strong> T3/T4/TSH hormone balancing, dosage adjustment, and metabolic fatigue management.</li>
+              <li><strong>Cardiovascular & Internal Medicine:</strong> Comprehensive blood pressure tracking, organ screening, and gastrointestinal care.</li>
+            </ul>
           </div>
+
+
         </div>
       </section>
 
@@ -372,6 +318,12 @@ export default async function HomePage() {
       {/* 8. Contact Map Section */}
       <section className="contact-map-section bg-gradient-mesh scroll-reveal">
         <div className="container contact-map-grid">
+          <div style={{ gridColumn: "1 / -1", textAlign: "center", marginBottom: "20px" }}>
+            <span className="badge">LOCATION & APPOINTMENTS</span>
+            <h2 className="section-title" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", fontWeight: 800, marginTop: "8px" }}>
+              Clinic Location & Consultation Booking
+            </h2>
+          </div>
           {/* Map Embed */}
           <div className="map-wrapper">
             <div className="map-header">

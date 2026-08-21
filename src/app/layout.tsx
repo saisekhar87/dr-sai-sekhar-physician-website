@@ -134,7 +134,7 @@ export default function RootLayout({
       ],
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Beside Abhiruchi Sweets, Ramalayam Street, Muralinagar",
+        "streetAddress": "Ramalayam Street, Opposite Government School, Muralinagar",
         "addressLocality": "Visakhapatnam",
         "addressRegion": "Andhra Pradesh",
         "postalCode": "530007",
@@ -157,7 +157,7 @@ export default function RootLayout({
       "medicalSpecialty": ["GeneralMedicine", "Endocrinology", "InfectiousDisease"],
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Beside Abhiruchi Sweets, Ramalayam Street, Muralinagar",
+        "streetAddress": "Ramalayam Street, Opposite Government School, Muralinagar",
         "addressLocality": "Visakhapatnam",
         "addressRegion": "Andhra Pradesh",
         "postalCode": "530007",
@@ -200,6 +200,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="canonical" href="https://www.drsaisekharphysician.com/" />
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
         <link rel="icon" href="/images/logo.png" type="image/png" sizes="any" />

@@ -19,7 +19,7 @@ export default function ContactPage() {
       "telephone": "+91 63007 93688",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Beside Abhiruchi Sweets, Ramalayam Street, Muralinagar",
+        "streetAddress": "Ramalayam Street, Opposite Government School, Muralinagar",
         "addressLocality": "Visakhapatnam",
         "addressRegion": "Andhra Pradesh",
         "postalCode": "530007",
