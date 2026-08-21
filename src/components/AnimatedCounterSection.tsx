@@ -99,7 +99,7 @@ export default function AnimatedCounterSection({ initialCounters }: CounterSecti
         {initialCounters.map((cnt, idx) => (
           <div key={cnt.id} className="counter-card">
             <span className="counter-number">{displayCounts[idx]}</span>
-            <h4 className="counter-title">{cnt.title}</h4>
+            <h3 className="counter-title">{cnt.title}</h3>
           </div>
         ))}
       </div>

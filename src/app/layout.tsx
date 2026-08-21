@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: "Dr. Sai Sekhar P | Best Physician in Visakhapatnam / Vizag",
     template: "%s | Dr. Sai Sekhar P Visakhapatnam"
   },
-  description: "Dr. Sai Sekhar Pyla (MD General Medicine, Diabetologist) is the best physician in Visakhapatnam / Vizag. Specialized treatment for Diabetes, Thyroid, Fevers, Hypertension & Internal Medicine at Trinetra Medicals, Muralinagar.",
+  description: "Consult Dr. Sai Sekhar P (MD), top physician & diabetologist in Visakhapatnam with 12+ years experience in diabetes, fevers, & thyroid care at Trinetra Medicals.",
   keywords: [
     "Dr. Sai Sekhar P",
     "Dr. Sai Sekhar Pyla",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "Doctor in Muralinagar Visakhapatnam"
   ],
   authors: [{ name: "Dr. Sai Sekhar P" }],
-  creator: "Dr. Sai Sekhar Pyla",
+  creator: "Dr. Sai Sekhar P",
   alternates: {
     canonical: "https://www.drsaisekharphysician.com/"
   },
@@ -48,14 +48,14 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://www.drsaisekharphysician.com/",
     title: "Dr. Sai Sekhar P | Best Physician in Visakhapatnam / Vizag",
-    description: "Dr. Sai Sekhar Pyla (MD General Medicine, Diabetologist) is the best physician in Visakhapatnam / Vizag. Specialized treatment for Diabetes, Thyroid, Fevers, Hypertension & Internal Medicine at Trinetra Medicals, Muralinagar.",
-    siteName: "Dr. Sai Sekhar Pyla - General Physician Visakhapatnam",
+    description: "Consult Dr. Sai Sekhar P (MD), top physician & diabetologist in Visakhapatnam with 12+ years experience in diabetes, fevers, & thyroid care at Trinetra Medicals.",
+    siteName: "Dr. Sai Sekhar P - General Physician Visakhapatnam",
     images: [{ url: "https://www.drsaisekharphysician.com/images/two.webp", width: 1200, height: 630, alt: "Dr. Sai Sekhar P - Best Physician in Visakhapatnam" }]
   },
   twitter: {
     card: "summary_large_image",
     title: "Dr. Sai Sekhar P | Best Physician in Visakhapatnam / Vizag",
-    description: "Dr. Sai Sekhar Pyla (MD General Medicine, Diabetologist) is the best physician in Visakhapatnam / Vizag. Specialized treatment for Diabetes, Thyroid, Fevers, Hypertension & Internal Medicine at Trinetra Medicals, Muralinagar.",
+    description: "Consult Dr. Sai Sekhar P (MD), top physician & diabetologist in Visakhapatnam with 12+ years experience in diabetes, fevers, & thyroid care at Trinetra Medicals.",
     images: ["https://www.drsaisekharphysician.com/images/two.webp"]
   },
   robots: {
