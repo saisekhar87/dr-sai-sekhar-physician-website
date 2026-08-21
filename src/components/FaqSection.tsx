@@ -136,9 +136,7 @@ export default function FaqSection() {
                       paddingTop: "16px",
                     }}
                   >
-                    <p style={{ margin: 0 }}>
-                      <strong>Direct Answer:</strong> {faq.answer}
-                    </p>
+                    <p style={{ margin: 0 }}>{faq.answer}</p>
                   </div>
                 )}
               </div>
