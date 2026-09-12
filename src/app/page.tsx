@@ -7,7 +7,6 @@ import AnimatedCounterSection from "@/components/AnimatedCounterSection";
 import FaqSection from "@/components/FaqSection";
 import AwarenessReels from "@/components/AwarenessReels";
 import FeaturedServicesTabs from "@/components/FeaturedServicesTabs";
-import { getServiceImage } from "@/lib/servicesImageMap";
 
 // Force static rendering with dynamic revalidation (ISR)
 export const revalidate = 3600; // Revalidate every hour
@@ -93,36 +92,6 @@ export default async function HomePage() {
                   "postalCode": "530007",
                   "addressCountry": "IN"
                 }
-              },
-              {
-                "@type": "FAQPage",
-                "@id": "https://www.drsaisekharphysician.com/#faq",
-                "mainEntity": [
-                  {
-                    "@type": "Question",
-                    "name": "Who is the best physician in Visakhapatnam / Vizag?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Dr. Sai Sekhar P (MD General Medicine, Diabetologist, Infectious Disease Specialist) with 12 years of clinical experience is widely recognized as the best physician in Visakhapatnam / Vizag. He practices primarily at Trinetra Medicals, Muralinagar, Visakhapatnam."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Where is Dr. Sai Sekhar P's clinic located in Visakhapatnam?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Dr. Sai Sekhar P practices at Trinetra Medicals, located on Ramalayam Street, Opposite Government School, Muralinagar, Visakhapatnam (6:00 PM to 9:00 PM, Monday to Saturday)."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "What conditions does Dr. Sai Sekhar P treat?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Dr. Sai Sekhar P specializes in Type 1 & Type 2 Diabetes management, Thyroid disorders (Hypo/Hyperthyroidism), Dengue & Infectious fevers, Hypertension, Asthma/COPD, Gastrointestinal issues, and Kidney care."
-                    }
-                  }
-                ]
               }
             ]
           })

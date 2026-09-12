@@ -53,9 +53,13 @@ export default function AwarenessReels() {
           if (entry.isIntersecting) {
             Object.keys(videoRefs.current).forEach((k) => {
               const v = videoRefs.current[k];
-              if (v && (k === activeId || !activeId)) {
-                if (k !== activeId) v.muted = true;
-                v.play().catch(() => {});
+              if (v) {
+                if (activeId ? k === activeId : k === REEL_VIDEOS[0].id) {
+                  if (k !== activeId) v.muted = true;
+                  v.play().catch(() => {});
+                } else {
+                  v.pause();
+                }
               }
             });
           } else {
@@ -181,6 +185,15 @@ export default function AwarenessReels() {
                   key={video.id}
                   className={`phone-reel-card ${isUnmutedActive ? "active-reel" : ""}`}
                   onClick={() => handleCardClick(video.id)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      handleCardClick(video.id);
+                    }
+                  }}
+                  tabIndex={0}
+                  role="button"
+                  aria-label={`Play health awareness reel: ${video.title}`}
                 >
                   <div className="phone-reel-frame">
                     <div className="phone-notch"></div>

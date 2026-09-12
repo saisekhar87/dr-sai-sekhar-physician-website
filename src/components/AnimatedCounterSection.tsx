@@ -16,7 +16,7 @@ export default function AnimatedCounterSection({ initialCounters }: CounterSecti
   const sectionRef = useRef<HTMLDivElement>(null);
   const [hasAnimated, setHasAnimated] = useState(false);
   const [displayCounts, setDisplayCounts] = useState<string[]>(
-    initialCounters.map(() => "0")
+    initialCounters.map((c) => c.count)
   );
 
   // Helper to parse count string (e.g. "1,00,000+" -> 100000, "50,000+" -> 50000)

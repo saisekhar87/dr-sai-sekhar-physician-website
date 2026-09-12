@@ -23,7 +23,9 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent, isWhatsAppDirect: boolean = false) => {
+  const [lastSubmittedWaUrl, setLastSubmittedWaUrl] = useState<string>("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.fullname || !formData.mobile || !formData.message) {
       setStatus({ type: "error", message: "Please fill in all required fields (Name, Mobile, Message)." });
@@ -47,19 +49,21 @@ ${emailLine}
 Sent via website: drsaisekharphysician.com`;
 
     const whatsappUrl = `https://wa.me/916300793688?text=${encodeURIComponent(waMessage)}`;
+    setLastSubmittedWaUrl(whatsappUrl);
+
+    // 1. Open WhatsApp immediately within direct user gesture to prevent popup blockers
+    const waWindow = typeof window !== "undefined" ? window.open(whatsappUrl, "_blank", "noopener,noreferrer") : null;
 
     try {
-      // 1. Submit to API route (saves to Google Sheets webhook if configured)
+      // 2. Submit to API route concurrently in background
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
+        keepalive: true
       });
 
       const result = await response.json();
-
-      // 2. Open WhatsApp pre-filled chat in a new tab
-      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
 
       if (response.ok && result.status) {
         setStatus({
@@ -80,12 +84,17 @@ Sent via website: drsaisekharphysician.com`;
       }
     } catch (error) {
       console.error("Form submit error:", error);
-      // Fallback: open WhatsApp directly even if API offline
-      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
       setStatus({
         type: "success",
         message: "WhatsApp has been opened with your pre-filled message."
       });
+    }
+
+    // 3. Fallback: if browser completely blocked the popup window, redirect current tab
+    if (!waWindow || waWindow.closed || typeof waWindow.closed === "undefined") {
+      if (typeof window !== "undefined") {
+        window.location.href = whatsappUrl;
+      }
     }
   };
 
@@ -100,17 +109,30 @@ Sent via website: drsaisekharphysician.com`;
           <div>
             <h4>Submission Successful</h4>
             <p>{status.message}</p>
-            <button
-              onClick={() => setStatus({ type: "idle", message: "" })}
-              className="btn btn-pill-outline"
-              style={{ marginTop: "12px", padding: "6px 16px", fontSize: "0.85rem" }}
-            >
-              Send Another Inquiry
-            </button>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "12px" }}>
+              {lastSubmittedWaUrl && (
+                <a
+                  href={lastSubmittedWaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-pill-primary"
+                  style={{ padding: "6px 16px", fontSize: "0.85rem", backgroundColor: "#25D366", borderColor: "#25D366", color: "#ffffff", display: "inline-flex", alignItems: "center", gap: "6px", textDecoration: "none" }}
+                >
+                  <i className="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+              )}
+              <button
+                onClick={() => setStatus({ type: "idle", message: "" })}
+                className="btn btn-pill-outline"
+                style={{ padding: "6px 16px", fontSize: "0.85rem" }}
+              >
+                Send Another Inquiry
+              </button>
+            </div>
           </div>
         </div>
       ) : (
-        <form onSubmit={(e) => handleSubmit(e, false)} className="contact-form">
+        <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="fullname">Full Name <span className="required">*</span></label>

@@ -1,10 +1,12 @@
 import { NextResponse } from "next/server";
 
 // Security headers
-const securityHeaders = {
+const securityHeaders: Record<string, string> = {
   "X-Content-Type-Options": "nosniff",
   "X-Frame-Options": "DENY",
-  "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+  ...(process.env.NODE_ENV === "production"
+    ? { "Strict-Transport-Security": "max-age=31536000; includeSubDomains" }
+    : {})
 };
 
 export async function POST(request: Request) {

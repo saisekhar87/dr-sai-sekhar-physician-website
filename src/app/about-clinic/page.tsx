@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import RegionalSEOBlock from "@/components/RegionalSEOBlock";
 import ClinicGallery from "@/components/ClinicGallery";
@@ -30,8 +29,7 @@ function cleanAndSanitizeContent(html: string): string {
   return html
     .replace(/10\s*(&nbsp;)?\s*years/gi, "12 years")
     .replace(/<strong>([^<]*CARE Hospital[^<]*)<\/strong>/gi, "$1")
-    .replace(/<li><strong>CARE Hospital[^<]*<\/li>/gi, "")
-    .replace(/Trinetra\s*Medicals/gi, '<strong style="color: #0d7a66;">Trinetra Medicals</strong>');
+    .replace(/<li><strong>CARE Hospital[^<]*<\/li>/gi, "");
 }
 
 export default async function AboutClinicPage() {

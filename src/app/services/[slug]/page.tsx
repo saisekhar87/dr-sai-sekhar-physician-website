@@ -70,6 +70,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: { absolute: `${service.name} | Dr. Sai Sekhar Physician Vizag` },
     description: cleanDescription,
+    alternates: {
+      canonical: `/services/${slug}`,
+    },
     openGraph: {
       title: `${service.name} Treatment | Dr. Sai Sekhar Physician Vizag`,
       description: cleanDescription,

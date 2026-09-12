@@ -9,11 +9,7 @@ export const metadata: Metadata = {
   description: "Learn about Dr. Sai Sekhar Pyla's medical practice, mission, 12+ years clinical experience, and primary care clinic in Visakhapatnam.",
 };
 
-async function getAboutUsContent() {
-  return "";
-}
-
-function cleanAndSanitizeContent(html: string): string {
+function getAboutUsContent(): string {
   return `
     <p className="about-p">Welcome to <strong>Dr. Sai Sekhar Pyla&apos;s</strong> official website, your trusted destination for expert medical care. With over <strong>12 years of experience</strong>, Dr. Sai Sekhar Pyla is a renowned Consultant Physician specializing in General Medicine, Diabetology, and Infectious Diseases.</p>
     <p className="about-p">Our clinic is dedicated to providing <strong>comprehensive healthcare</strong>, ranging from preventive medicine to the management of chronic diseases like <strong>diabetes, hypertension, and infectious diseases</strong>. We strive to offer patient-centric care with a focus on early diagnosis and effective treatment. We are committed to providing the <strong>best physician services in Visakhapatnam / Vizag</strong>.</p>
@@ -22,8 +18,7 @@ function cleanAndSanitizeContent(html: string): string {
 }
 
 export default async function AboutUsPage() {
-  const content = await getAboutUsContent();
-  const cleanedContent = cleanAndSanitizeContent(content);
+  const cleanedContent = getAboutUsContent();
 
   return (
     <div className="about-page-wrapper">
@@ -57,7 +52,7 @@ export default async function AboutUsPage() {
                 height={500}
                 className="about-side-img"
                 sizes="(max-width: 991px) 100vw, 550px"
-                style={{ width: "100%", height: "500px", objectFit: "cover", objectPosition: "top center" }}
+                style={{ width: "100%", height: "auto", minHeight: "350px", maxHeight: "500px", objectFit: "cover", objectPosition: "top center" }}
                 priority
               />
             </div>

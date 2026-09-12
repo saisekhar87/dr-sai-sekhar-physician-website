@@ -41,15 +41,14 @@ const CATEGORY_ICONS: Record<string, string> = {
 };
 
 export default function FeaturedServicesTabs({ categories, showCatalogLink = true }: FeaturedServicesTabsProps) {
-  if (!categories || categories.length === 0) return null;
-
   // Default active category is the first one
-  const [activeCatId, setActiveCatId] = useState<number | string>(categories[0].id);
+  const initialCatId = categories && categories.length > 0 ? categories[0].id : "";
+  const [activeCatId, setActiveCatId] = useState<number | string>(initialCatId);
   const tabTrackRef = useRef<HTMLDivElement>(null);
 
   // Restore active category selection from sessionStorage or URL query parameters on mount
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== "undefined" && categories && categories.length > 0) {
       const urlParams = new URLSearchParams(window.location.search);
       const urlCat = urlParams.get("cat") || urlParams.get("category");
       const storedCat = sessionStorage.getItem("active_service_cat");
@@ -59,12 +58,14 @@ export default function FeaturedServicesTabs({ categories, showCatalogLink = tru
         const found = categories.find(
           (c) => String(c.id) === String(targetCatId) || String(c.category_name).toLowerCase() === String(targetCatId).toLowerCase()
         );
-        if (found) {
-          setActiveCatId(found.id);
+        if (found && found.id !== activeCatId) {
+          requestAnimationFrame(() => {
+            setActiveCatId(found.id);
+          });
         }
       }
     }
-  }, [categories]);
+  }, [categories, activeCatId]);
 
   // Smoothly scroll the tab track container horizontally without triggering window auto-scrolling
   useEffect(() => {
@@ -81,6 +82,8 @@ export default function FeaturedServicesTabs({ categories, showCatalogLink = tru
       }
     }
   }, [activeCatId]);
+
+  if (!categories || categories.length === 0) return null;
 
   const handleCategorySelect = (catId: number | string) => {
     setActiveCatId(catId);

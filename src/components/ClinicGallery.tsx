@@ -14,11 +14,6 @@ interface GalleryItem {
 
 export default function ClinicGallery() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const galleryItems: GalleryItem[] = [
     {
@@ -134,6 +129,12 @@ export default function ClinicGallery() {
             key={item.id}
             className={`gallery-card-item ${item.type === "video" ? "video-item" : ""}`}
             onClick={() => setSelectedIndex(idx)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                setSelectedIndex(idx);
+              }
+            }}
             tabIndex={0}
             role="button"
             aria-label={`View ${item.title}`}
@@ -172,7 +173,7 @@ export default function ClinicGallery() {
       </div>
 
       {/* Lightbox Modal Popup (Portal to document.body) */}
-      {mounted && selectedIndex !== null && activeItem && createPortal(
+      {typeof document !== "undefined" && selectedIndex !== null && activeItem && createPortal(
         <div className="gallery-lightbox-backdrop" onClick={() => setSelectedIndex(null)}>
           <div className="gallery-lightbox-modal" onClick={(e) => e.stopPropagation()}>
             {/* Close Button */}

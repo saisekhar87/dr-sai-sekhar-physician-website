@@ -42,10 +42,7 @@ function cleanAndSanitizeContent(html: string): string {
     .replace(/<strong>([^<]*CARE Hospital[^<]*)<\/strong>/gi, "$1")
     
     // 4. Update sentence 2 with primarily at Trinetra Medicals
-    .replace(/Currently serving as a Consultant Physician at CARE Hospital, Visakhapatnam.*known for/gi, 'Currently serving as a Consultant Physician at CARE Hospital, Visakhapatnam, and primarily at <strong style="color: #0d7a66;">Trinetra Medicals</strong>, Dr. Sai Sekhar Pyla is known for')
-    
-    // 5. Highlight Trinetra Medicals cleanly
-    .replace(/Trinetra\s*Medicals/gi, '<strong style="color: #0d7a66;">Trinetra Medicals</strong>');
+    .replace(/Currently serving as a Consultant Physician at CARE Hospital, Visakhapatnam.*known for/gi, 'Currently serving as a Consultant Physician at CARE Hospital, Visakhapatnam, and primarily at <strong style="color: #0d7a66;">Trinetra Medicals</strong>, Dr. Sai Sekhar Pyla is known for');
 }
 
 export default async function AboutDoctorPage() {
@@ -165,9 +162,9 @@ export default async function AboutDoctorPage() {
                 <Link href="/contact" className="btn btn-primary">
                   Book an Appointment
                 </Link>
-                <Link href="tel:+916300793688" className="btn btn-secondary">
+                <a href="tel:+916300793688" className="btn btn-secondary">
                   <i className="fas fa-phone-alt"></i> Call Clinic
-                </Link>
+                </a>
               </div>
             </div>
           </div>

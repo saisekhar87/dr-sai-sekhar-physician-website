@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -18,6 +18,8 @@ export default function HomeSlider({ banners }: HomeSliderProps) {
   const [current, setCurrent] = useState(0);
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
+  const touchStartY = useRef<number | null>(null);
+  const touchEndY = useRef<number | null>(null);
 
   const defaultBanners = [
     { id: 1, title: "Comprehensive Diabetes &\nChronic Disease Care", subtitle: "Expert diagnosis and advanced, patient-centered therapy for endocrine and metabolic disorders." },
@@ -34,34 +36,37 @@ export default function HomeSlider({ banners }: HomeSliderProps) {
       }))
     : defaultBanners;
 
-  // Disabled auto-slide timer so hero banner stays static on initial visit
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setCurrent((prev) => (prev + 1) % slides.length);
-  //   }, 5500);
-  //   return () => clearInterval(timer);
-  // }, [slides.length]);
-
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
     touchEndX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+    touchEndY.current = e.touches[0].clientY;
   };
 
   const handleTouchMove = (e: React.TouchEvent) => {
     touchEndX.current = e.touches[0].clientX;
+    touchEndY.current = e.touches[0].clientY;
   };
 
   const handleTouchEnd = () => {
-    if (touchStartX.current === null || touchEndX.current === null) return;
-    const diff = touchStartX.current - touchEndX.current;
+    if (touchStartX.current === null || touchEndX.current === null || touchStartY.current === null || touchEndY.current === null) return;
+    const diffX = touchStartX.current - touchEndX.current;
+    const diffY = touchStartY.current - touchEndY.current;
     const minSwipeDistance = 50;
-    if (diff > minSwipeDistance) {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    } else if (diff < -minSwipeDistance) {
-      setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+
+    // Only swipe if horizontal drag was greater than vertical scroll movement
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+      if (diffX > minSwipeDistance) {
+        setCurrent((prev) => (prev + 1) % slides.length);
+      } else if (diffX < -minSwipeDistance) {
+        setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+      }
     }
+
     touchStartX.current = null;
     touchEndX.current = null;
+    touchStartY.current = null;
+    touchEndY.current = null;
   };
 
   const currentSlide = slides[current];

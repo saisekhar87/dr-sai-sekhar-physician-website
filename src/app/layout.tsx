@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Dr. Sai Sekhar P" }],
   creator: "Dr. Sai Sekhar P",
   alternates: {
-    canonical: "https://www.drsaisekharphysician.com/"
+    canonical: "./"
   },
   icons: {
     icon: [
@@ -200,12 +200,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://www.drsaisekharphysician.com/" />
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
-        <link rel="icon" href="/images/logo-circle.png?v=2" type="image/png" sizes="any" />
-        <link rel="shortcut icon" href="/images/logo-circle.png?v=2" />
-        <link rel="apple-touch-icon" href="/images/logo-circle.png?v=2" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <script
           type="application/ld+json"
