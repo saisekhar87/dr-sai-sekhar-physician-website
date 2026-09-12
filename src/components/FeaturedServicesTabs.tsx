@@ -163,7 +163,7 @@ export default function FeaturedServicesTabs({ categories, showCatalogLink = tru
 
         <div className="featured-card-grid">
           {activeCategory.services && activeCategory.services.length > 0 ? (
-            activeCategory.services.map((service) => (
+            activeCategory.services.map((service, idx) => (
               <Link
                 key={service.id}
                 href={`/services/${service.slug}`}
@@ -177,6 +177,7 @@ export default function FeaturedServicesTabs({ categories, showCatalogLink = tru
                     alt={service.name}
                     width={400}
                     height={250}
+                    priority={idx < 4}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 360px"
                     className="card-service-img"
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}

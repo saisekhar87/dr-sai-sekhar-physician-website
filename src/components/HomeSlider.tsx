@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -35,6 +35,15 @@ export default function HomeSlider({ banners }: HomeSliderProps) {
         subtitle: defaultBanners[idx % defaultBanners.length].subtitle
       }))
     : defaultBanners;
+
+  // Auto-play interval: rotates slide titles every 4.5 seconds automatically
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 4500);
+
+    return () => clearInterval(timer);
+  }, [slides.length]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;

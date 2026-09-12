@@ -7,6 +7,7 @@ import AnimatedCounterSection from "@/components/AnimatedCounterSection";
 import FaqSection from "@/components/FaqSection";
 import AwarenessReels from "@/components/AwarenessReels";
 import FeaturedServicesTabs from "@/components/FeaturedServicesTabs";
+import { getCurrentMonthYear, getCurrentISODate } from "@/lib/dateUtils";
 
 // Force static rendering with dynamic revalidation (ISR)
 export const revalidate = 3600; // Revalidate every hour
@@ -43,6 +44,8 @@ async function getClinicData() {
 
 export default async function HomePage() {
   const data = await getClinicData();
+  const currentMonthYear = getCurrentMonthYear();
+  const currentISODate = getCurrentISODate();
 
   return (
     <div className="home-page">
@@ -60,7 +63,7 @@ export default async function HomePage() {
                 "name": "Dr Sai Sekhar P | Best Physician in Visakhapatnam / Vizag",
                 "description": "Dr. Sai Sekhar P is the best physician in Visakhapatnam / Vizag. MD General Medicine, Diabetologist, & Infectious Disease Specialist at Trinetra Medicals, Muralinagar.",
                 "datePublished": "2024-01-01T00:00:00+05:30",
-                "dateModified": "2026-08-18T00:00:00+05:30",
+                "dateModified": currentISODate,
                 "inLanguage": "en-IN",
                 "isPartOf": {
                   "@type": "WebSite",
@@ -185,7 +188,7 @@ export default async function HomePage() {
 
             {/* Freshness Signal */}
             <p className="freshness-signal" style={{ fontSize: "0.82rem", color: "var(--neutral-muted)", marginTop: "16px" }}>
-              <i className="fas fa-calendar-check" style={{ marginRight: "4px", color: "var(--primary)" }}></i> Clinical profile last updated: <strong>August 2026</strong>
+              <i className="fas fa-calendar-check" style={{ marginRight: "4px", color: "var(--primary)" }}></i> Clinical profile last updated: <strong>{currentMonthYear}</strong>
             </p>
           </div>
         </div>
@@ -215,7 +218,7 @@ export default async function HomePage() {
                 What is a General Physician and Diabetologist?
               </h3>
               <p style={{ fontSize: "0.95rem", color: "var(--neutral-dark)", lineHeight: 1.55, margin: 0 }}>
-                <strong>Direct Answer:</strong> A General Physician manages fevers, acute illnesses, and multi-organ conditions non-surgically. A Diabetologist specializes in Type 1 & Type 2 Diabetes, insulin therapy, and preventing blood sugar complications.
+                A General Physician manages fevers, acute illnesses, and multi-organ conditions non-surgically. A Diabetologist specializes in Type 1 & Type 2 Diabetes, insulin therapy, and preventing blood sugar complications.
               </p>
             </div>
 
@@ -226,7 +229,7 @@ export default async function HomePage() {
                 When Should You Consult Dr. Sai Sekhar P in Visakhapatnam?
               </h3>
               <p style={{ fontSize: "0.95rem", color: "var(--neutral-dark)", lineHeight: 1.55, margin: 0 }}>
-                <strong>Direct Answer:</strong> Consult for elevated blood sugar, persistent viral fevers (Dengue, Malaria), blood pressure spikes, thyroid fatigue, or chronic symptom evaluation.
+                Consult for elevated blood sugar, persistent viral fevers (Dengue, Malaria), blood pressure spikes, thyroid fatigue, or chronic symptom evaluation.
               </p>
             </div>
 
@@ -237,7 +240,7 @@ export default async function HomePage() {
                 What Clinical Proof & Experience Backs Dr. Sai Sekhar P?
               </h3>
               <p style={{ fontSize: "0.95rem", color: "var(--neutral-dark)", lineHeight: 1.55, margin: 0 }}>
-                <strong>Direct Answer:</strong> Dr. Sai Sekhar P (MD) brings <strong>12+ years of clinical excellence</strong>, <strong>200,000+ patient consultations</strong>, and 100,000+ chronic care cases at CARE Hospital & Trinetra Medicals.
+                Dr. Sai Sekhar P (MD) brings <strong>12+ years of clinical excellence</strong>, <strong>200,000+ patient consultations</strong>, and 100,000+ chronic care cases at CARE Hospital & Trinetra Medicals.
               </p>
             </div>
 
